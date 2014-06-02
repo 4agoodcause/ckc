@@ -1,0 +1,103 @@
+$slab: "chunk", Georgia, serif;
+$sans: "proxima-nova", Helvetica, arial, sans-serif;
+
+$book:  400;
+$reg:  400;
+$semi:  600;
+$bold:  700;
+
+$base:  24px;
+
+body {
+  font: $reg 1em/1.5em $sans;
+}
+
+h1,h2,h3,h4,h5 {
+  color: $navy;
+  font-family: $slab;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font: $reg 18px/24px $sans;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+.title-section {
+}
+
+.title-sub-section {
+}
+
+.title-center {
+  margin-bottom: 1em;
+  color: $navy;
+  font: $reg 40px/1em $sans;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.title-block {
+  color: #fff;
+  font: $semi 18px/1em $sans;
+  text-transform: uppercase;
+}
+
+p {
+  margin-bottom: 1em;
+  font-size: 18px;
+  
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+strong {
+  font-weight: $bold;
+}
+
+em {
+  font-style: italic;
+}
+
+.label {
+  font-weight: $bold;
+}
+
+.body p,
+.body ul,
+.body ol {
+  margin-bottom: $base;
+
+  &:last-child, &.label {
+    margin-bottom: 0;
+  }
+}
+
+.body ul,
+.body ol {
+  margin-left: 1.5em;
+}
+
+.body ul li {
+  list-style: disc;
+}
+
+.body ol li {
+  list-style: decimal;
+}

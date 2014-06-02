@@ -1,0 +1,24 @@
+@mixin cf {
+  &:before, &:after {
+    content: " ";
+    display: block;
+  }
+  &:after {
+    clear: both;
+  }
+  *zoom:1;
+}
+
+@mixin border-bottom-dash() {
+  border-bottom: 2px dashed $grey;
+}
+
+@mixin border-right-dash() {
+  border-right: 2px dashed $grey;
+}
+
+/*
+@mixin wave-border-top() {
+    background: image-url("wave-top.png") repeat-x left top;
+}
+*/

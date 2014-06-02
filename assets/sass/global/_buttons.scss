@@ -1,0 +1,45 @@
+
+a {
+	@include transition(all 0.15s ease-in);
+	color: $red;
+	&:hover {
+    	color: $red;
+	}
+}
+
+.btn {
+  display: block;
+  padding: 1em 2em;
+  background: $blue;
+  border-radius: 7px;
+  color: #fff;
+  font: $bold 18px/1 $sans;
+  text-transform: uppercase;
+  text-align: center;
+  
+  &:hover {
+    background: $navy;
+    color: #fff;
+  }
+  
+  @include bp-min-width($medium) {
+    display: inline-block;
+  }
+    
+  &.white {
+    background: #fff;
+    color: $red;
+    &:hover {
+      color: $blue
+    }
+  }
+
+}
+
+.btn-large {
+  font-size: 24px;
+}
+
+.link-cta {
+  font: $reg 30px/1em $slab;
+}

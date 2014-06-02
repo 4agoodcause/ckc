@@ -1,0 +1,28 @@
+body {
+  background: $lt-blue;
+}
+
+.wrapper {
+  @include cf;
+  width: 92%;
+  max-width: 1140px;
+  padding: $base 0;
+  margin: 0 auto;
+  
+  @include bp-min-width($small) {
+    width: 94%;
+    padding: $base*2 0;
+  }
+}
+
+.content {
+  @include bp-min-width($medium) {
+    float: left;
+  }
+}
+
+.left-sidebar {
+  @include bp-min-width($medium) {
+    float: left;
+  }
+}

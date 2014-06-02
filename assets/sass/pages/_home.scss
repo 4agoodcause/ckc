@@ -1,0 +1,117 @@
+
+.page-home .hero {
+  text-align: center;
+
+  @include bp-min-width($medium) {
+    text-align: left;
+  }
+  
+  p {
+    font-size: 15px;
+  }
+}
+
+.dontate-bar {
+  background: $red;
+  color: #fff;
+  
+  .wrapper {
+    position: relative;
+    padding: $base 0;
+  }
+}
+
+.donate-copy {
+
+  @include bp-min-width($medium) {
+    margin-bottom: 0;
+    padding-right: 300px;
+    line-height: 28px;
+    font-weight: $semi;
+  }
+}
+
+.donate-btn {
+
+  @include bp-min-width($medium) {
+    position: absolute;
+    top: $base;
+    right: 0;
+  }
+}
+
+.home-intro,
+.our-inspiration,
+.join-craig,
+.testimonials {
+  @include border-bottom-dash;
+  
+}
+
+
+/** WHAT'S NEW ===========**/
+
+.whats-new {
+  
+  .title {
+    margin-bottom: 0.5em;
+    font-size: 32px;
+  }
+}
+
+
+/** OUR IMPACT ===========**/
+
+.our-impact {
+  
+  .title {
+    margin-bottom: 0.25em;
+    font-size: 80px;
+    line-height: 70px;
+    
+    .our {
+      display: block;
+    }
+  }
+  
+  .icon-impact {
+    float: left;
+    width: 30%;
+  }
+  
+  .info {
+    float: left;
+    width: 70%;
+  }
+    
+  a {
+    font-weight: $bold;
+    border-bottom: 1px solid $red;
+  }
+}
+
+
+/** OUR INSPIRATION ===========**/
+
+.our-inspiration {
+
+}
+
+
+
+/** JOIN CRAIG ===========**/
+
+.join-craig {}
+
+
+
+/** TESTIMONIALS ===========**/
+
+.testimonials {
+
+  @include bp-min-width($medium) {
+    text-align: center;
+  }
+}
+
+

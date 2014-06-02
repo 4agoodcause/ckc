@@ -1,0 +1,13 @@
+
+.footer-social {
+  background: $blue;
+  color: #fff;
+  
+  a {
+    color: #fff;
+    
+    &:hover {
+      color: $navy;
+    }
+  }
+}
