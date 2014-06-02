@@ -3,11 +3,39 @@
   background: $blue;
   color: #fff;
   
+  .wrapper {
+    padding: $base 0;
+  }
+  
   a {
     color: #fff;
     
     &:hover {
       color: $navy;
+    }
+  }
+}
+
+.footer-social .post-list .post {
+  margin-bottom: 1em;
+  
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.footer-social .post-date {
+  color: #fff;
+}
+
+
+
+.footer-social .follow-us {
+  
+  li {
+    @include bp-min-width($medium) {
+      float: left;
+      margin-right: 1em;
     }
   }
 }

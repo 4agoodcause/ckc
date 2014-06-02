@@ -30,6 +30,13 @@
 .footer-nav a {
   display: block;
   padding: 0.25em 0;
+  font-size: 14px;
+  font-weight: $semi;
+  text-transform: uppercase;
+  
+  &:hover {
+    color: #fff;
+  }
   
   @include bp-max-width($small) {
     display: inline-block;
@@ -37,25 +44,13 @@
   }
 }
 
-.footer .follow-us {
-  margin-bottom: $base;
-  text-align: center;
-  
-  @include bp-min-width($medium) {
-    float: right;
-  }
-  
-  li {
-    @include bp-min-width($medium) {
-      float: left;
-      margin-left: 1em;
-    }
-  }
-}
 
-.copyright {
-  clear: both;
-  padding-top: $pad;
+.footer-copyright {
+
+  @include bp-min-width($medium) {
+    float: left;
+    clear: left;
+  }
   
   p {
     font-size: 15px;

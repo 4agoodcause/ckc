@@ -106,6 +106,10 @@ h5 {
   font-size: 16px;
 }
 
+.title-section {
+  margin-bottom: 12px;
+}
+
 .title-center {
   margin-bottom: 1em;
   color: #283658;
@@ -115,6 +119,7 @@ h5 {
 }
 
 .title-block {
+  margin-bottom: 1em;
   color: #fff;
   font: 600 18px/1em "proxima-nova", Helvetica, arial, sans-serif;
   text-transform: uppercase;
@@ -316,7 +321,7 @@ a:hover {
 
 .btn {
   display: block;
-  padding: 1em 2em;
+  padding: 0.8em 2em;
   background: #51a6d2;
   border-radius: 7px;
   color: #fff;
@@ -339,6 +344,13 @@ a:hover {
 }
 .btn.white:hover {
   color: #51a6d2;
+}
+.btn.trans-border {
+  background: none;
+  border: 2px solid #fff;
+}
+.btn.trans-border:hover {
+  background: #fff;
 }
 
 .btn-large {
@@ -540,21 +552,18 @@ button {
 
 /* Modules */
 .hero {
-  padding: 24px 6%;
   background: #51a6d2;
   text-align: center;
   color: #fff;
 }
-@media (min-width: 740px) {
-  .hero {
-    padding: 48px 6%;
-  }
+.hero .wrapper {
+  padding: 24px 0;
 }
 .hero .title {
+  margin-bottom: 0.5em;
   color: #fff;
   font-size: 48px;
   line-height: 54px;
-  margin-bottom: 6px;
 }
 .hero p {
   max-width: 560px;
@@ -629,8 +638,37 @@ button {
     text-align: left;
   }
 }
+.page-home .hero .wrapper {
+  position: relative;
+  padding-bottom: 0;
+}
 .page-home .hero p {
   font-size: 15px;
+}
+.page-home .hero .hero-img {
+  float: left;
+  width: 63%;
+  margin-left: -5%;
+}
+@media (min-width: 740px) {
+  .page-home .hero .hero-content {
+    float: right;
+    width: 41.66%;
+    padding-top: 24px;
+  }
+}
+.page-home .hero .caption {
+  font-size: 14px;
+  line-height: 18px;
+  font-style: italic;
+}
+@media (min-width: 740px) {
+  .page-home .hero .caption {
+    position: absolute;
+    bottom: 1em;
+    right: 0;
+    width: 41.66%;
+  }
 }
 
 .dontate-bar {
@@ -671,6 +709,9 @@ button {
   margin-bottom: 0.5em;
   font-size: 32px;
 }
+.whats-new .post-title {
+  padding-right: 10%;
+}
 
 /** OUR IMPACT ===========**/
 .our-impact .title {
@@ -701,6 +742,18 @@ button {
   .testimonials {
     text-align: center;
   }
+}
+.testimonials .quote {
+  font-size: 17px;
+  font-style: italic;
+}
+.testimonials .quote-name {
+  margin-bottom: 0.25em;
+  font-size: 19px;
+  font-weight: 700;
+}
+.testimonials .quote-position {
+  font-size: 15px;
 }
 
 /*
@@ -1034,6 +1087,12 @@ button {
 .footer-nav a {
   display: block;
   padding: 0.25em 0;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.footer-nav a:hover {
+  color: #fff;
 }
 @media (max-width: 600px) {
   .footer-nav a {
@@ -1042,27 +1101,13 @@ button {
   }
 }
 
-.footer .follow-us {
-  margin-bottom: 24px;
-  text-align: center;
-}
 @media (min-width: 740px) {
-  .footer .follow-us {
-    float: right;
-  }
-}
-@media (min-width: 740px) {
-  .footer .follow-us li {
+  .footer-copyright {
     float: left;
-    margin-left: 1em;
+    clear: left;
   }
 }
-
-.copyright {
-  clear: both;
-  padding-top: 18px;
-}
-.copyright p {
+.footer-copyright p {
   font-size: 15px;
   text-align: center;
 }
@@ -1071,9 +1116,30 @@ button {
   background: #51a6d2;
   color: #fff;
 }
+.footer-social .wrapper {
+  padding: 24px 0;
+}
 .footer-social a {
   color: #fff;
 }
 .footer-social a:hover {
   color: #283658;
+}
+
+.footer-social .post-list .post {
+  margin-bottom: 1em;
+}
+.footer-social .post-list .post:last-of-type {
+  margin-bottom: 0;
+}
+
+.footer-social .post-date {
+  color: #fff;
+}
+
+@media (min-width: 740px) {
+  .footer-social .follow-us li {
+    float: left;
+    margin-right: 1em;
+  }
 }

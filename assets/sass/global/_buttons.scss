@@ -9,7 +9,7 @@ a {
 
 .btn {
   display: block;
-  padding: 1em 2em;
+  padding: 0.8em 2em;
   background: $blue;
   border-radius: 7px;
   color: #fff;
@@ -29,8 +29,18 @@ a {
   &.white {
     background: #fff;
     color: $red;
+    
     &:hover {
       color: $blue
+    }
+  }
+  
+  &.trans-border {
+    background: none;
+    border: 2px solid #fff;
+    
+    &:hover {
+      background: #fff;
     }
   }
 
@@ -39,6 +49,7 @@ a {
 .btn-large {
   font-size: 24px;
 }
+
 
 .link-cta {
   font: $reg 30px/1em $slab;

@@ -1,19 +1,21 @@
 
 .hero {
-  padding: $base 6%;
   background: $blue;
   text-align: center;
   color: #fff;
   
   @include bp-min-width($medium) {
-    padding: $base*2 6%;
+  }
+  
+  .wrapper {
+    padding: $base 0;
   }
   
   .title {
+    margin-bottom: 0.5em;
     color: #fff;
     font-size: 48px;
     line-height: 54px;
-    margin-bottom: 6px;
   }
   
   p {
