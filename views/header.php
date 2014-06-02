@@ -32,7 +32,7 @@
   <nav class="main-nav">
     <div class="wrapper">
     
-      <a href="" class="btn mobile-menu-btn">Menu <span class="icon-menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span></a>
+      <a href="" class="btn-mobile-menu"><span class="icon-menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span> Menu</a>
       <ul>
         <li><a href="">About Us</a></li>
         <li><a href="">Our Impact</a></li>

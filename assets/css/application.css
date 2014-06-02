@@ -871,12 +871,19 @@ button {
   background: #fff;
 }
 .header .wrapper {
-  position: relative;
-  padding: 0;
+  width: 100%;
+  padding: 0.5em 0 0;
+}
+@media (min-width: 740px) {
+  .header .wrapper {
+    position: relative;
+    padding: 0;
+  }
 }
 
 .logo {
-  float: left;
+  margin-bottom: 0.5em;
+  text-align: center;
 }
 @media (min-width: 740px) {
   .logo {
@@ -884,6 +891,14 @@ button {
     top: 0.5em;
     left: 0;
     z-index: 10;
+  }
+}
+.logo img {
+  max-width: 220px;
+}
+@media (min-width: 740px) {
+  .logo img {
+    max-width: none;
   }
 }
 
@@ -904,148 +919,23 @@ button {
 }
 
 .cta-btns a {
-  display: inline-block;
-  padding: 1em;
+  display: block;
+  padding: 1em 0 0.8em;
   background: #51a6d2;
   color: #fff;
   font-family: "chunk", Georgia, serif;
-  font-size: 17px;
+  font-size: 16px;
   text-transform: uppercase;
-  vertical-align: middle;
+  text-align: center;
+}
+@media (min-width: 740px) {
+  .cta-btns a {
+    padding: 1em;
+    font-size: 17px;
+  }
 }
 .cta-btns a.btn-join {
   background: #c21734;
-}
-
-.main-nav {
-  position: relative;
-  background: #283658;
-}
-.main-nav .wrapper {
-  padding: 0;
-}
-
-.main-nav ul {
-  display: none;
-  clear: both;
-  width: 100%;
-  background: #51a6d2;
-}
-@media (min-width: 740px) {
-  .main-nav ul {
-    display: inline;
-    float: right;
-    width: auto;
-    background: none;
-  }
-}
-.main-nav ul.show {
-  display: block;
-}
-
-.main-nav li {
-  float: none;
-  margin: 0;
-}
-@media (min-width: 740px) {
-  .main-nav li {
-    float: left;
-  }
-}
-
-.main-nav li a {
-  display: block;
-  padding: 0.5em 1em;
-  color: #fff;
-  font-family: "chunk", Georgia, serif;
-}
-.main-nav li a:hover, .main-nav li a.active {
-  color: #fff;
-  background: #283658;
-}
-@media (min-width: 740px) {
-  .main-nav li a {
-    display: inline-block;
-    padding: 1em;
-    font-size: 19px;
-  }
-  .main-nav li a:hover, .main-nav li a.active {
-    color: #fff;
-    background: #51a6d2;
-  }
-}
-
-/** Mobile Menu Button **/
-.mobile-menu-btn {
-  float: right;
-  display: inline-block;
-  position: relative;
-  padding: 0.5em 0.5em 0.5em 2.5em;
-  text-transform: uppercase;
-}
-.mobile-menu-btn.active {
-  display: inline-block;
-  color: #fff;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-@media (min-width: 740px) {
-  .mobile-menu-btn {
-    display: none;
-  }
-}
-
-.mobile-menu-btn .icon-menu {
-  display: block;
-  position: absolute;
-  left: 11px;
-  top: 8px;
-  background: none;
-}
-.mobile-menu-btn .icon-menu .bar {
-  display: block;
-  width: 20px;
-  height: 3px;
-  margin-bottom: 3px;
-  background: #fff;
-  border-radius: 2px;
-}
-
-.mobile-menu-btn.active .bar {
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-  position: absolute;
-  top: 6px;
-  left: 0;
-  background-color: #fff;
-}
-.mobile-menu-btn.active .bar:nth-child(1) {
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-.mobile-menu-btn.active .bar:nth-child(2) {
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-.mobile-menu-btn.active .bar:nth-child(3) {
-  opacity: 0;
-}
-
-.mobile-menu-btn.active .bar:nth-child(2) {
-  position: absolute;
-  top: 6px;
-  left: 0;
-  background-color: #fff;
-}
-
-.mobile-menu-btn.active .bar:nth-child(3) {
-  display: none;
 }
 
 .footer {
@@ -1110,6 +1000,147 @@ button {
 .footer-copyright p {
   font-size: 15px;
   text-align: center;
+}
+
+.main-nav {
+  position: relative;
+  background: #283658;
+}
+.main-nav .wrapper {
+  padding: 0;
+}
+
+.main-nav ul {
+  display: none;
+  clear: both;
+  width: 100%;
+}
+@media (min-width: 740px) {
+  .main-nav ul {
+    display: inline;
+    float: right;
+    width: auto;
+    background: none;
+  }
+}
+.main-nav ul.show {
+  display: block;
+}
+
+.main-nav li {
+  float: none;
+  margin: 0;
+  border-bottom: 1px solid #51a6d2;
+}
+.main-nav li:first-of-type {
+  border-top: 1px solid #51a6d2;
+}
+.main-nav li:last-of-type {
+  border-bottom: none;
+}
+@media (min-width: 740px) {
+  .main-nav li {
+    float: left;
+    border-bottom: none;
+  }
+}
+
+.main-nav li a {
+  display: block;
+  padding: 0.5em 1em;
+  color: #fff;
+  font-family: "chunk", Georgia, serif;
+}
+.main-nav li a:hover, .main-nav li a.active {
+  color: #fff;
+  background: #283658;
+}
+@media (min-width: 740px) {
+  .main-nav li a {
+    display: inline-block;
+    padding: 1em;
+    font-size: 19px;
+  }
+  .main-nav li a:hover, .main-nav li a.active {
+    color: #fff;
+    background: #51a6d2;
+  }
+}
+
+/** Mobile Menu Button **/
+.btn-mobile-menu {
+  display: block;
+  position: relative;
+  padding: 0.75em;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+.btn-mobile-menu:hover {
+  color: #51a6d2;
+}
+@media (min-width: 740px) {
+  .btn-mobile-menu {
+    display: none;
+  }
+}
+
+.btn-mobile-menu .icon-menu {
+  position: relative;
+  display: inline-block;
+  vertical-align: -2px;
+  width: 20px;
+  height: 16px;
+  margin-right: 5px;
+  background: none;
+}
+.btn-mobile-menu .icon-menu .bar {
+  display: block;
+  width: 20px;
+  height: 3px;
+  margin-bottom: 3px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+.btn-mobile-menu.active .icon-menu {
+  height: 9px;
+}
+
+.btn-mobile-menu.active .bar {
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+.btn-mobile-menu.active .bar:nth-child(1) {
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.btn-mobile-menu.active .bar:nth-child(2) {
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.btn-mobile-menu.active .bar:nth-child(3) {
+  opacity: 0;
+}
+
+.btn-mobile-menu.active .bar:nth-child(2) {
+  position: absolute;
+  left: 0;
+  background-color: #fff;
+}
+
+.btn-mobile-menu.active .bar:nth-child(3) {
+  display: none;
 }
 
 .footer-social {

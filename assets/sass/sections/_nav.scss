@@ -1,0 +1,143 @@
+
+.main-nav {
+  position: relative;
+  background: $navy;
+  
+  @include bp-min-width($medium) {
+  }
+  
+  .wrapper {
+    padding: 0;
+  }
+}
+
+.main-nav ul {
+  display: none;
+  clear: both;
+  width: 100%;
+  
+  @include bp-min-width($medium) {
+    display: inline;
+    float: right;
+    width: auto;
+    background: none;
+  }
+
+  &.show {
+    display: block;
+  }
+}
+
+.main-nav li {
+  float: none;
+  margin: 0;
+  border-bottom: 1px solid $blue;
+  
+  &:first-of-type {
+    border-top: 1px solid $blue;
+  }
+  
+  &:last-of-type {
+    border-bottom: none;
+  }
+  
+  @include bp-min-width($medium) {
+    float: left;
+    border-bottom: none;
+  }
+}
+
+.main-nav li a {
+  display: block;
+  padding: 0.5em 1em;
+  color: #fff;
+  font-family: $slab;
+  
+  &:hover, &.active {
+    color: #fff;
+    background: $navy;
+  }
+  
+  @include bp-min-width($medium) {
+    display: inline-block;
+    padding: 1em;
+    font-size: 19px;
+    
+    &:hover, &.active {
+      color: #fff;
+      background: $blue;
+    }
+  }
+}
+
+/** Mobile Menu Button **/
+
+.btn-mobile-menu {
+  display: block;
+  position: relative;
+  padding: 0.75em;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  
+  &:hover {
+    color: $blue;
+  }
+    
+  @include bp-min-width($medium) {
+    display: none;
+  }
+}
+
+.btn-mobile-menu .icon-menu {
+  position: relative;
+  display: inline-block;
+  vertical-align: -2px;
+  width: 20px;
+  height: 16px;
+  margin-right: 5px;
+  background: none;
+    
+  .bar {
+    display: block;
+    width: 20px;
+    height: 3px;
+    margin-bottom: 3px;
+    background: #fff;
+    border-radius: 2px;
+  }
+}
+
+.btn-mobile-menu.active .icon-menu {
+  height: 9px;
+}
+
+.btn-mobile-menu.active .bar {
+  @include transition(all 0.2s ease-in);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  
+  &:nth-child(1) {
+    @include transform(rotate(45deg));
+  }
+  
+  &:nth-child(2) {
+    @include transform(rotate(-45deg));
+  }
+  
+  &:nth-child(3) {
+    opacity: 0;
+  }
+}
+
+.btn-mobile-menu.active .bar:nth-child(2) {
+  position: absolute;
+  left: 0;
+  background-color: #fff;
+}
+
+.btn-mobile-menu.active .bar:nth-child(3) {
+  display: none;
+}
