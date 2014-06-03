@@ -10,11 +10,12 @@ a {
 .btn {
   display: block;
   padding: 0.8em 2em;
-  background: $blue;
+  background: $red;
   border-radius: 7px;
   color: #fff;
   font: $bold 18px/1 $sans;
   text-transform: uppercase;
+  letter-spacing: 0.08em;
   text-align: center;
   
   &:hover {

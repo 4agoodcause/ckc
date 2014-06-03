@@ -4,8 +4,17 @@
 
   .wrapper {
     position: relative;
-    padding-bottom: 0;
+    padding: $base 0 0;
   }
+
+  .title {
+    margin-bottom: 0.5em;
+
+    @include bp-min-width($medium) {
+      font-size: 48px;
+      line-height: 54px;
+    }
+  }  
   
   p {
     max-width: none;

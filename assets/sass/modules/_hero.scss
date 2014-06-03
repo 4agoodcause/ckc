@@ -9,20 +9,23 @@
   
   .wrapper {
     padding: $base 0;
+  
+    @include bp-min-width($medium) {
+      padding: $base*2.5 0 $base*3;
+    }
   }
   
   .title {
-    margin-bottom: 0.5em;
+    margin-bottom: 12px;
     color: #fff;
 
     @include bp-min-width($medium) {
-      font-size: 48px;
-      line-height: 54px;
+      margin-bottom: $base;
     }
   }
   
   p {
-    max-width: 560px;
+    max-width: 680px;
     margin: 0 auto;
     font-size: 18px;
     font-weight: $semi;

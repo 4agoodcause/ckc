@@ -1,0 +1,98 @@
+
+.donate-info-blocks {
+  text-align: center;
+  
+  .wrapper {
+    padding-bottom: $base;
+
+    @include bp-min-width($medium) {
+      padding: 0;
+    }
+  }
+  
+  [class*="col-"] {
+    @include border-bottom-dash;
+    padding-bottom: $base;
+
+    @include bp-min-width($medium) {
+      @include border-right-dash;
+      min-height: 340px;
+      margin-bottom: 0;
+      padding: $base*2 4%;
+      border-bottom: none;
+      
+    }
+
+    &:last-of-type {
+      border: none;
+    }
+  }
+
+  h2 {
+    margin-bottom: 12px;
+    font-size: 32px;
+    line-height: 38px;
+  }  
+}
+
+.visit-store {
+  background: $navy;
+  
+  .wrapper {
+    padding-bottom: 0;
+
+    @include bp-min-max-width($medium, $xlarge) {
+      position: relative;
+      padding-bottom: $base;
+    }
+  }
+  
+  .visit-store-content {
+    margin-bottom: $base;
+
+    @include bp-min-width($medium) {
+      float: left;
+      width: 100%;
+      padding-right: 320px;
+    }
+
+    @include bp-min-width($xlarge) {
+      width: 58%;
+      padding-right: 0;
+    }
+  }
+
+  .visit-store-image {
+    width: 300px;
+    margin: 0 auto;
+
+    @include bp-min-max-width($medium, $xlarge) {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+
+    @include bp-min-width($xlarge) {
+      float: left;
+      width: 42%;
+    }
+    
+  }
+  
+  .title-section {
+    color: $blue;
+  }
+  
+  p {
+    color: #fff;
+
+    @include bp-min-width($medium) {
+      padding-right: 5%;
+    }
+
+    @include bp-min-width($xlarge) {
+      padding-right: 15%;
+    }
+  }
+}
+

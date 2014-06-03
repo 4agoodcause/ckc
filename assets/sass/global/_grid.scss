@@ -37,6 +37,12 @@ $pad: 18px;
   }
 }
 
+.col-7-12 {
+  @include bp-min-width($medium) {
+    width: 58.33%;
+  }
+}
+
 .col-1-2 {
   @include bp-min-width($medium) {
     width: 50%;
