@@ -26,3 +26,11 @@ body {
     float: left;
   }
 }
+
+.section-image {
+  margin-bottom: $base*1.5;
+
+  @include bp-min-width($medium) {
+    margin-bottom: 0;
+  }
+}

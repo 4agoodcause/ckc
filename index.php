@@ -68,7 +68,7 @@
     
       <div class="grid">
       
-        <div class="col-1-4">
+        <div class="col-1-4 section-image">
           <img src="/assets/images/pic-killian-01.jpg" class="image-border">
         </div>
       
@@ -89,7 +89,7 @@
 
       <div class="grid">
       
-        <div class="col-1-4">
+        <div class="col-1-4 section-image">
           <img src="/assets/images/pic-kimbrel-01.jpg" class="image-border">
         </div>
       

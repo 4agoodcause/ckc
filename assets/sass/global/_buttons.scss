@@ -52,5 +52,9 @@ a {
 
 
 .link-cta {
-  font: $reg 30px/1em $slab;
+  font: $reg 21px/1em $slab;
+
+  @include bp-min-width($medium) {
+    font-size: 30px;
+  }
 }

@@ -14,8 +14,11 @@
   .title {
     margin-bottom: 0.5em;
     color: #fff;
-    font-size: 48px;
-    line-height: 54px;
+
+    @include bp-min-width($medium) {
+      font-size: 48px;
+      line-height: 54px;
+    }
   }
   
   p {

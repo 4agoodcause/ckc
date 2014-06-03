@@ -1,4 +1,22 @@
 
+.footer-social [class*="col-"] {
+  margin-bottom: $base;
+  padding-bottom: $base;
+  border-bottom: 1px solid #fff;
+  
+  &:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  @include bp-min-width($medium) {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+
 .footer-social {
   background: $blue;
   color: #fff;

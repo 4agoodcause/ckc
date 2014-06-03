@@ -3,7 +3,7 @@ $pad: 18px;
 
 .grid {
   @include cf;
-  margin: 0 -3%;
+  margin: 0;
   
   @include bp-min-width($medium) {
     margin: 0 -18px;
@@ -13,7 +13,12 @@ $pad: 18px;
 [class*='col-'] {
   float: left;
   width: 100%;
-  padding: 0 3%;
+  margin-bottom: $base;
+  padding: 0;
+  
+  &:last-of-type {
+    margin-bottom: 0;
+  }
   
   @include bp-min-width($medium) {
     padding: 0 $pad;
