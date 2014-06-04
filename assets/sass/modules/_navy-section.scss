@@ -1,0 +1,16 @@
+
+.navy-section {
+  background: $navy;
+  
+  .title-section {
+    color: $blue
+  }
+  
+  .title-sub-section {
+    color: #fff;
+  }
+  
+  [class*="content-"] p {
+    color: #fff;
+  }
+}

@@ -11,7 +11,6 @@ $pad: 18px;
 }
 
 [class*='col-'] {
-  float: left;
   width: 100%;
   margin-bottom: $base;
   padding: 0;
@@ -21,6 +20,7 @@ $pad: 18px;
   }
   
   @include bp-min-width($medium) {
+    float: left;
     padding: 0 $pad;
   }
 }

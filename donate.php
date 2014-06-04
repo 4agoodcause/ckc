@@ -3,16 +3,14 @@
 	
   <section class="hero">
     <div class="wrapper">
-    
-      <div class="hero-content">
-        <h1 class="title">Donate</h1>
-        <p>Thank you for choosing to support Curing Kids Cancer. Even a small amount of money can make a big difference in pediatric cancer; it can make the difference between a child surviving or not.</p>
-      </div>
+
+      <h1 class="title">Donate</h1>
+      <p>Thank you for choosing to support Curing Kids Cancer. Even a small amount of money can make a big difference in pediatric cancer; it can make the difference between a child surviving or not.</p>
 
     </div>
   </section>
     
-  <section class="donate-info-blocks">
+  <section class="info-grid donate-info-grid">
     <div class="wrapper">
 
       <div class="grid">
@@ -40,16 +38,16 @@
     </div>
   </section>
   
-  <section class="visit-store">
+  <section class="visit-store navy-section">
     <div class="wrapper">
             
-        <div class="visit-store-content">
+        <div class="content-visit-store">
           <h2 class="title-section">Get a Gift For Your Coach!</h2>
           <p>Looking for a touching way to say thank you to your coach, teacher or other special person in your life? Now, you can purchase honorary certificates and other Curing Kids Cancer gear as a way to do just that. Check out the latest CKC gear and place your order today!</p>
           <p><a href="" class="btn">Visit Our Store</a></p>
         </div>
 
-        <div class="visit-store-image">
+        <div class="image-visit-store">
           <img src="/assets/images/pic-store-tee-01.png">
         </div>
       

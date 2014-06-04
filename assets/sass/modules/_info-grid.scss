@@ -1,0 +1,36 @@
+
+.info-grid {
+  text-align: center;
+  
+  .wrapper {
+    padding-bottom: $base;
+
+    @include bp-min-width($medium) {
+      padding: 0;
+    }
+  }
+  
+  [class*="col-"] {
+    @include border-bottom-dash;
+    padding-bottom: $base;
+
+    @include bp-min-width($medium) {
+      @include border-right-dash;
+      min-height: 340px;
+      margin-bottom: 0;
+      padding: $base*2 4%;
+      border-bottom: none;
+      
+    }
+
+    &:last-of-type {
+      border: none;
+    }
+  }
+
+  h2 {
+    margin-bottom: 12px;
+    font-size: 32px;
+    line-height: 38px;
+  }  
+}

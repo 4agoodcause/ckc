@@ -125,6 +125,10 @@ h5 {
   margin-bottom: 12px;
 }
 
+.title-sub-section {
+  font: 400 27px/32px "proxima-nova", Helvetica, arial, sans-serif;
+}
+
 .title-center {
   margin-bottom: 1em;
   color: #283658;
@@ -192,8 +196,8 @@ em {
 
 /* $sprite: image-url("sprite.svg"); */
 .image-border {
-  border: 10px solid #fff;
-  box-shadow: 10px 10px 0 rgba(40, 54, 88, 0.1);
+  border: 8px solid #fff;
+  box-shadow: 8px 8px 0 rgba(40, 54, 88, 0.1);
 }
 
 /*
@@ -238,7 +242,6 @@ em {
 }
 
 [class*='col-'] {
-  float: left;
   width: 100%;
   margin-bottom: 24px;
   padding: 0;
@@ -248,6 +251,7 @@ em {
 }
 @media (min-width: 700px) {
   [class*='col-'] {
+    float: left;
     padding: 0 18px;
   }
 }
@@ -596,6 +600,10 @@ button {
     width: 100%;
   }
 }
+input[type="submit"].btn,
+button.btn {
+  padding: 0.8em 1.5em;
+}
 
 /* Modules */
 .hero {
@@ -682,6 +690,52 @@ button {
     padding: 0.75em 0;
     text-align: center;
   }
+}
+
+.info-grid {
+  text-align: center;
+}
+.info-grid .wrapper {
+  padding-bottom: 24px;
+}
+@media (min-width: 700px) {
+  .info-grid .wrapper {
+    padding: 0;
+  }
+}
+.info-grid [class*="col-"] {
+  border-bottom: 2px dashed #b2beca;
+  padding-bottom: 24px;
+}
+@media (min-width: 700px) {
+  .info-grid [class*="col-"] {
+    border-right: 2px dashed #b2beca;
+    min-height: 340px;
+    margin-bottom: 0;
+    padding: 48px 4%;
+    border-bottom: none;
+  }
+}
+.info-grid [class*="col-"]:last-of-type {
+  border: none;
+}
+.info-grid h2 {
+  margin-bottom: 12px;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.navy-section {
+  background: #283658;
+}
+.navy-section .title-section {
+  color: #51a6d2;
+}
+.navy-section .title-sub-section {
+  color: #fff;
+}
+.navy-section [class*="content-"] p {
+  color: #fff;
 }
 
 /* Pages */
@@ -827,39 +881,6 @@ button {
   font-size: 15px;
 }
 
-.donate-info-blocks {
-  text-align: center;
-}
-.donate-info-blocks .wrapper {
-  padding-bottom: 24px;
-}
-@media (min-width: 700px) {
-  .donate-info-blocks .wrapper {
-    padding: 0;
-  }
-}
-.donate-info-blocks [class*="col-"] {
-  border-bottom: 2px dashed #b2beca;
-  padding-bottom: 24px;
-}
-@media (min-width: 700px) {
-  .donate-info-blocks [class*="col-"] {
-    border-right: 2px dashed #b2beca;
-    min-height: 340px;
-    margin-bottom: 0;
-    padding: 48px 4%;
-    border-bottom: none;
-  }
-}
-.donate-info-blocks [class*="col-"]:last-of-type {
-  border: none;
-}
-.donate-info-blocks h2 {
-  margin-bottom: 12px;
-  font-size: 32px;
-  line-height: 38px;
-}
-
 .visit-store {
   background: #283658;
 }
@@ -872,35 +893,35 @@ button {
     padding-bottom: 24px;
   }
 }
-.visit-store .visit-store-content {
+.visit-store .content-visit-store {
   margin-bottom: 24px;
 }
 @media (min-width: 700px) {
-  .visit-store .visit-store-content {
+  .visit-store .content-visit-store {
     float: left;
     width: 100%;
     padding-right: 320px;
   }
 }
 @media (min-width: 1100px) {
-  .visit-store .visit-store-content {
+  .visit-store .content-visit-store {
     width: 58%;
     padding-right: 0;
   }
 }
-.visit-store .visit-store-image {
+.visit-store .image-visit-store {
   width: 300px;
   margin: 0 auto;
 }
 @media (min-width: 700px) and (max-width: 1100px) {
-  .visit-store .visit-store-image {
+  .visit-store .image-visit-store {
     position: absolute;
     right: 0;
     bottom: 0;
   }
 }
 @media (min-width: 1100px) {
-  .visit-store .visit-store-image {
+  .visit-store .image-visit-store {
     float: left;
     width: 42%;
   }
@@ -920,6 +941,191 @@ button {
   .visit-store p {
     padding-right: 15%;
   }
+}
+
+.start-fundraiser {
+  background: #283658;
+}
+.start-fundraiser .wrapper {
+  position: relative;
+}
+
+.content-start-fundraiser {
+  *zoom: 1;
+  width: 100%;
+  margin-bottom: 24px;
+}
+.content-start-fundraiser:before, .content-start-fundraiser:after {
+  content: " ";
+  display: block;
+}
+.content-start-fundraiser:after {
+  clear: both;
+}
+@media (min-width: 700px) {
+  .content-start-fundraiser {
+    padding-right: 440px;
+  }
+}
+.content-start-fundraiser .title-sub-section {
+  margin-bottom: 24px;
+}
+@media (min-width: 700px) {
+  .content-start-fundraiser .title-sub-section {
+    margin-bottom: 48px;
+  }
+}
+.content-start-fundraiser .content-wrap {
+  *zoom: 1;
+}
+.content-start-fundraiser .content-wrap:before, .content-start-fundraiser .content-wrap:after {
+  content: " ";
+  display: block;
+}
+.content-start-fundraiser .content-wrap:after {
+  clear: both;
+}
+.content-start-fundraiser .content-wrap .image {
+  float: left;
+  width: 38%;
+}
+.content-start-fundraiser .content-wrap p {
+  float: left;
+  width: 62%;
+  padding-left: 3%;
+}
+
+.start-fundraiser .sidebar-right {
+  padding: 24px;
+  background: #1c263d;
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 700px) {
+  .start-fundraiser .sidebar-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    padding: 48px 36px 36px;
+  }
+}
+.start-fundraiser .sidebar-right p {
+  margin-bottom: 36px;
+  color: #51a6d2;
+  font-size: 16px;
+  font-weight: 600;
+}
+.start-fundraiser .sidebar-right li {
+  margin-bottom: 24px;
+  padding: 4px 0;
+  color: #fff;
+  font: 400 19px/22px "chunk", Georgia, serif;
+}
+.start-fundraiser .sidebar-right li:last-of-type {
+  margin-bottom: 0;
+}
+
+.event-ideas {
+  background: #eef9fb;
+}
+
+.grid-event-ideas [class*="col-"]:nth-child(3n+1) {
+  clear: left;
+}
+.grid-event-ideas .wrap {
+  padding: 12px 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 700px) {
+  .grid-event-ideas .wrap {
+    min-height: 160px;
+  }
+}
+.grid-event-ideas h4 {
+  color: #c21734;
+  font-size: 27px;
+}
+.grid-event-ideas p {
+  color: #283658;
+}
+
+.btn-start-fundraiser {
+  display: block;
+  padding: 12px 20px;
+  background: #51a6d2;
+  border-radius: 5px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font: 400 27px/1em "chunk", Georgia, serif;
+  text-align: center;
+}
+@media (min-width: 700px) {
+  .btn-start-fundraiser {
+    min-height: 160px;
+    font-size: 50px;
+    text-align: left;
+  }
+}
+.btn-start-fundraiser:hover {
+  color: #fff;
+  background: #283658;
+}
+
+@media (min-width: 700px) {
+  .donate-info-grid.info-grid [class*="col-"] {
+    padding: 48px 3%;
+  }
+}
+.donate-info-grid p {
+  margin-bottom: 24px;
+}
+.donate-info-grid p:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 700px) {
+  .donate-info-grid p {
+    margin-bottom: 24px;
+  }
+}
+
+.form-join-battle .form-item {
+  position: relative;
+  margin-bottom: 12px;
+  padding: 4px 0;
+  border: 2px solid #b2beca;
+  border-radius: 5px;
+}
+.form-join-battle label {
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  font-size: 18px;
+}
+.form-join-battle .form-item input {
+  border: none;
+}
+@media (min-width: 700px) {
+  .form-join-battle .btn {
+    float: right;
+  }
+}
+.form-join-battle .terms {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #283658;
+  font-size: 14px;
+  text-decoration: underline;
+}
+@media (min-width: 700px) {
+  .form-join-battle .terms {
+    float: left;
+  }
+}
+.form-join-battle .terms:hover {
+  color: #1f1f20;
+  text-decoration: none;
 }
 
 /*

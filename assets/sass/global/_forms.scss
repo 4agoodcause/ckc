@@ -180,4 +180,8 @@ button {
   @include bp-max-width($small) {
     width: 100%;
   }
+  
+  &.btn {
+    padding: 0.8em 1.5em;
+  }
 }
