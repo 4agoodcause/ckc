@@ -1,0 +1,90 @@
+
+.sidebar-left {
+  background: $lt-blue;
+  margin: 0 -4%;
+  padding: 0 3%;
+
+  @include bp-min-width($large) {
+    position: absolute;
+    top: $base*2;
+    left: 0;
+    width: 260px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.sidebar-left {
+  .block {
+    margin-bottom: 12px;
+    padding: 12px 0;
+    border-bottom: 2px dashed $grey;
+  
+    @include bp-min-width($large) {
+      padding: 12px 20px;
+    }
+    
+    &:last-of-type {
+      border-bottom: none;
+    }
+
+  }
+  
+  .title {
+    color: $navy;
+  }
+}
+
+.side-menu {
+  ul {
+    margin-left: -0.5em;
+  }
+  li {
+    margin-bottom: 6px;
+  }
+  
+  a {
+    display: inline-block;
+    padding: 0.125em 0.5em;
+    background: $lt-blue;
+    border-radius: 4px;
+    color: $navy;
+    font-weight: $bold;
+    text-transform: uppercase;
+    
+    &:hover, &.active {
+      background: $red;
+      color: #fff;
+    }
+  }
+}
+
+.block-share {
+  @include cf;
+  li {
+    float: left;
+    margin-right: 12px;
+    
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.block-media {
+  .media-name {
+    margin-bottom: 0.125em;
+    color: $navy;
+    font-size: 18px;
+    font-weight: $bold;
+  }
+  
+  .media-email {
+    font-size: 16px;
+  }
+}
+
+.block-join-battle p {
+  font-size: 16px;
+  line-height: 20px;
+}

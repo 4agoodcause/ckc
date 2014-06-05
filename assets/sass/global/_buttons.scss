@@ -3,7 +3,7 @@ a {
 	@include transition(all 0.15s ease-in);
 	color: $red;
 	&:hover {
-    	color: $red;
+    	color: $navy;
 	}
 }
 
@@ -51,11 +51,18 @@ a {
   font-size: 24px;
 }
 
+.btn-small {
+  font-size: 14px;
+}
 
 .link-cta {
   font: $reg 21px/1em $slab;
 
   @include bp-min-width($large) {
     font-size: 30px;
+  }
+  
+  &.read-more {
+    font-size: 19px;
   }
 }

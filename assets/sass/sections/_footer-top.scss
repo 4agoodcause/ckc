@@ -1,5 +1,5 @@
 
-.footer-social [class*="col-"] {
+.footer-top [class*="col-"] {
   margin-bottom: $base;
   padding-bottom: $base;
   border-bottom: 1px solid #fff;
@@ -17,7 +17,7 @@
   }
 }
 
-.footer-social {
+.footer-top {
   background: $blue;
   color: #fff;
   
@@ -34,21 +34,19 @@
   }
 }
 
-.footer-social .post-list .post {
-  margin-bottom: 1em;
+.footer-top .post-list-small .post {
+  margin-bottom: 16px;
   
   &:last-of-type {
     margin-bottom: 0;
   }
 }
 
-.footer-social .post-date {
+.footer-top .post-date {
   color: #fff;
 }
 
-
-
-.footer-social .follow-us {
+.footer-top .follow-us {
   @include cf;
   
   li {

@@ -24,9 +24,7 @@
     }
   }
   
-  .content-wrap {
-    @include cf;
-    
+  .content-wrap {    
     .image {
       float: left;
       width: 38%;

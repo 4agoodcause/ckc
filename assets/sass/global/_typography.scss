@@ -66,7 +66,13 @@ h5 {
   text-align: center;
 }
 
-.title-block {
+.sidebar-left .title-block {
+  margin-bottom: 0.75em;
+  color: $navy;
+  font: $reg 18px/1em $slab;
+}
+
+.footer-top .title-block {
   margin-bottom: 1em;
   color: #fff;
   font: $semi 18px/1em $sans;

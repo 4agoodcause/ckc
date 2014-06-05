@@ -1,0 +1,89 @@
+
+.post-date {
+  color: $grey;
+  font-size: 14px;
+  font-weight: $bold;
+  text-transform: uppercase;
+}
+
+.post-list .post {
+  @include cf;
+  margin-bottom: $base;
+  padding-bottom: $base;
+  border-bottom: 1px solid $grey;
+  
+  &:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+.post-list {
+  .post-title {
+    margin-bottom: 0.18em;
+    font-size: 24px;
+
+    @include bp-min-width($medium) {
+      font-size: 32px;
+    }
+    
+    a {
+      color: $navy;
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+  
+  .post-date {
+    margin-bottom: 1em;
+  }
+  
+  .post-thumb {
+    @include bp-max-width($small) {
+      margin-bottom: 12px;
+    }
+        
+    @include bp-min-width($small) {
+      float: left;
+      width: 27%;
+    }
+  }
+}
+
+.post-list .post-teaser {
+  @include bp-min-width($small) {
+    float: left;
+    width: 73%;
+    padding-left: 3%;
+  }
+  
+  p:first-of-type {
+    font-size: 16px;
+  }
+}
+
+.post-list-small .post {
+  @include cf;
+  margin-bottom: 16px;
+    
+  &:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+.post-list-small {
+  .post-thumb {
+    float: left;
+    width: 20%;
+  }
+  
+  .post-info {
+    float: left;
+    width: 80%;
+    padding-left: 4%;
+  }
+}

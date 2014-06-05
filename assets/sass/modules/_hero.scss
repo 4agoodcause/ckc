@@ -3,14 +3,11 @@
   background: $blue;
   text-align: center;
   color: #fff;
-  
-  @include bp-min-width($medium) {
-  }
-  
+    
   .wrapper {
     padding: $base 0;
   
-    @include bp-min-width($medium) {
+    @include bp-min-width($large) {
       padding: $base*2.5 0 $base*3;
     }
   }
@@ -19,8 +16,12 @@
     margin-bottom: 12px;
     color: #fff;
 
-    @include bp-min-width($medium) {
+    @include bp-min-width($large) {
       margin-bottom: $base;
+    }
+    
+    &:last-child {
+      margin-bottom: 0;
     }
   }
   

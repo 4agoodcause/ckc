@@ -1,17 +1,17 @@
-  <section class="footer-social">
+  <section class="footer-top">
     <div class="wrapper">
 
       <div class="col-1-3 follow-us">
         <h3 class="title-block">Connect with Us</h3>
         <ul class="social-icons">
-          <li><a href="" class="icon-social-twitter"></a></li>
-          <li><a href="" class="icon-social-facebook"></a></li>
-          <li><a href="" class="icon-social-youtube"></a></li>
-          <li><a href="" class="icon-social-flickr"></a></li>
+          <li><a href="" class="icon-social-lg-twitter"></a></li>
+          <li><a href="" class="icon-social-lg-facebook"></a></li>
+          <li><a href="" class="icon-social-lg-youtube"></a></li>
+          <li><a href="" class="icon-social-lg-flickr"></a></li>
         </ul>
       </div>
       
-      <div class="col-1-3 post-list">
+      <div class="col-1-3 post-list-small">
         <h3 class="title-block">News &amp; Events</h3>
         <article class="post">
           <p class="post-date">June 15, 2014</p>

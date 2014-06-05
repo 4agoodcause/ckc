@@ -31,7 +31,7 @@
     
       <div class="grid">
       
-        <div class="col-1-2 post-list whats-new">
+        <div class="col-1-2 post-list-small whats-new">
           <h2 class="title">What's New</h2>
           <article class="post">
             <div class="post-thumb"><img src="/assets/images/thumb-news-01.jpg"></div>

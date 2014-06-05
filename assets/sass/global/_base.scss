@@ -19,16 +19,23 @@ body {
   }
 }
 
+.main .wrapper {
+  position: relative;
+  padding: 0;
+  min-height: 400px;
+}
+
 .content {
-  @include bp-min-width($medium) {
-    float: left;
+  padding: $base 0;
+  
+  @include bp-min-width($large) {
+    padding: $base*2 0 $base*2 3%;
+    border-left: 260px solid $lt-blue;
   }
 }
 
-.left-sidebar {
-  @include bp-min-width($medium) {
-    float: left;
-  }
+.content-wrap {
+  @include cf;
 }
 
 .section-image {
