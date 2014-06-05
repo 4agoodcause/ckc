@@ -11,6 +11,22 @@
   background-position: 0 -38px;
 }
 
+.icon-arrow-down {
+  width: 17px;
+  height: 10px;
+  background-position: -99px -38px;
+}
+
+[class*="icon-arrows"] {
+  width: 28px;
+  height: 22px;
+  background-position: -34px -38px;
+  
+  &[class*="-right"] {
+    background-position: -66px -38px;
+  }
+}
+
 .icon-impact {
   width: 127px;
   height: 127px;

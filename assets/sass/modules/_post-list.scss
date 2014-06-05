@@ -11,12 +11,6 @@
   margin-bottom: $base;
   padding-bottom: $base;
   border-bottom: 1px solid $grey;
-  
-  &:last-of-type {
-    margin-bottom: 0;
-    padding-bottom: 0;
-    border-bottom: none;
-  }
 }
 
 .post-list {
@@ -85,5 +79,31 @@
     float: left;
     width: 80%;
     padding-left: 4%;
+  }
+}
+
+.post-nav {
+  @include cf;
+  
+  a {
+    font: $reg 18px/1em $slab;
+
+    @include bp-min-width($medium) {
+      font-size: 24px;
+    }
+  }
+  
+  [class*="icon-"] {
+    vertical-align: -5px;
+  }
+  
+  .older {
+    float: left;
+    margin-right: 4px;
+  }
+  
+  .newer {
+    float: right;
+    margin-left: 4px;
   }
 }

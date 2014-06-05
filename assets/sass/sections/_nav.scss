@@ -5,6 +5,10 @@
     
   .wrapper {
     padding: 0;
+    
+    @include bp-max-width($large) {
+      width: 100%;
+    }
   }
 }
 
@@ -69,6 +73,49 @@
       color: #fff;
       background: $blue;
     }
+  }
+}
+
+
+/** Mobile Child Menu **/
+
+.main-nav .parent {
+  position: relative;
+  
+  .open-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-left: 1px solid $blue;
+    text-align: center;
+    
+    .icon-arrow-down {
+      vertical-align: -8px;
+    }
+    
+    &.active .icon-arrow-down {
+      @include rotate(180deg)
+    }
+  }
+}
+
+.main-nav .child-menu {
+  display: none;
+  
+  &.show {
+    display: block;
+  }
+  
+  li {
+    border-bottom: none;
+  }
+  
+  li a {
+    line-height: 1em;
+    padding-left: 24px;
   }
 }
 
@@ -143,3 +190,5 @@
 .btn-mobile-menu.active .bar:nth-child(3) {
   display: none;
 }
+
+

@@ -3,9 +3,7 @@
 	
   <section class="hero">
     <div class="wrapper">
-
       <h1 class="title">News</h1>
-
     </div>
   </section>
     
@@ -75,6 +73,11 @@
               </div>
             </div>
           </article>
+
+          <div class="post-nav">
+            <a href="" class="older"><span class="icon-arrows-left"></span> Older Stories</a>
+            <a href="" class="newer">Newer Stories <span class="icon-arrows-right"></span></a>
+          </div>
         
         </div>
       
@@ -115,7 +118,7 @@
         </div>
         
       </aside>
-      
+            
     </div>
   </section>
   

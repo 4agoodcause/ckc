@@ -207,14 +207,29 @@ em {
 
 [class*="icon-"] {
   display: inline-block;
-  background: url('/assets/images/sprite.png?1401994188') no-repeat;
-  background: url('/assets/images/sprite.svg?1401994146') no-repeat;
+  background: url('/assets/images/sprite.png?1402002627') no-repeat;
+  background: url('/assets/images/sprite.svg?1402002760') no-repeat;
 }
 
 .icon-arrow {
   width: 29px;
   height: 28px;
   background-position: 0 -38px;
+}
+
+.icon-arrow-down {
+  width: 17px;
+  height: 10px;
+  background-position: -99px -38px;
+}
+
+[class*="icon-arrows"] {
+  width: 28px;
+  height: 22px;
+  background-position: -34px -38px;
+}
+[class*="icon-arrows"][class*="-right"] {
+  background-position: -66px -38px;
 }
 
 .icon-impact {
@@ -711,11 +726,6 @@ button.btn {
 .post-list .post:after {
   clear: both;
 }
-.post-list .post:last-of-type {
-  margin-bottom: 0;
-  padding-bottom: 0;
-  border-bottom: none;
-}
 
 .post-list .post-title {
   margin-bottom: 0.18em;
@@ -783,6 +793,36 @@ button.btn {
   float: left;
   width: 80%;
   padding-left: 4%;
+}
+
+.post-nav {
+  *zoom: 1;
+}
+.post-nav:before, .post-nav:after {
+  content: " ";
+  display: block;
+}
+.post-nav:after {
+  clear: both;
+}
+.post-nav a {
+  font: 400 18px/1em "chunk", Georgia, serif;
+}
+@media (min-width: 700px) {
+  .post-nav a {
+    font-size: 24px;
+  }
+}
+.post-nav [class*="icon-"] {
+  vertical-align: -5px;
+}
+.post-nav .older {
+  float: left;
+  margin-right: 4px;
+}
+.post-nav .newer {
+  float: right;
+  margin-left: 4px;
 }
 
 .info-grid {
@@ -1147,8 +1187,8 @@ button.btn {
   left: 0;
   width: 37px;
   height: 37px;
-  background: url('/assets/images/sprite.png?1401994188') no-repeat;
-  background: url('/assets/images/sprite.svg?1401994146') no-repeat;
+  background: url('/assets/images/sprite.png?1402002627') no-repeat;
+  background: url('/assets/images/sprite.svg?1402002760') no-repeat;
 }
 
 .event-ideas {
@@ -1610,6 +1650,11 @@ button.btn {
 .main-nav .wrapper {
   padding: 0;
 }
+@media (max-width: 900px) {
+  .main-nav .wrapper {
+    width: 100%;
+  }
+}
 
 .main-nav ul {
   display: none;
@@ -1672,6 +1717,44 @@ button.btn {
     color: #fff;
     background: #51a6d2;
   }
+}
+
+/** Mobile Child Menu **/
+.main-nav .parent {
+  position: relative;
+}
+.main-nav .parent .open-menu {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border-left: 1px solid #51a6d2;
+  text-align: center;
+}
+.main-nav .parent .open-menu .icon-arrow-down {
+  vertical-align: -8px;
+}
+.main-nav .parent .open-menu.active .icon-arrow-down {
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.main-nav .child-menu {
+  display: none;
+}
+.main-nav .child-menu.show {
+  display: block;
+}
+.main-nav .child-menu li {
+  border-bottom: none;
+}
+.main-nav .child-menu li a {
+  line-height: 1em;
+  padding-left: 24px;
 }
 
 /** Mobile Menu Button **/

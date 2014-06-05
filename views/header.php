@@ -38,7 +38,15 @@
         <li><a href="">Our Impact</a></li>
         <li><a href="">Donate</a></li>
         <li><a href="">Get Involved</a></li>
-        <li><a href="">News & Events</a></li>
+        <li class="parent"><a href="">News & Events <span class="open-menu"><span class="icon-arrow-down"></span></span></a>
+          <ul class="child-menu">
+            <li><a href="" class="active">News</a></li>
+            <li><a href="">Press Releases</a></li>
+            <li><a href="">Events</a></li>
+            <li><a href="">Event Photos</a></li>
+            <li><a href="">Newsletter Archive</a></li>
+          </ul>        
+        </li>
         <li><a href="">Contact Us</a></li>
       </ul>
     
