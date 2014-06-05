@@ -5,7 +5,7 @@
   .wrapper {
     padding-bottom: $base;
 
-    @include bp-min-width($medium) {
+    @include bp-min-width($large) {
       padding: 0;
     }
   }
@@ -14,7 +14,7 @@
     @include border-bottom-dash;
     padding-bottom: $base;
 
-    @include bp-min-width($medium) {
+    @include bp-min-width($large) {
       @include border-right-dash;
       min-height: 340px;
       margin-bottom: 0;

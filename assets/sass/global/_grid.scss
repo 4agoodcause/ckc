@@ -56,7 +56,7 @@ $pad: 18px;
 }
 
 .col-1-3 {
-  @include bp-min-width($medium) {
+  @include bp-min-width($large) {
     width: 33.33%;
   }
 }

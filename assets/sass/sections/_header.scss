@@ -3,8 +3,11 @@
   background: #fff;
 
   .wrapper {
-    width: 100%;
     padding: 0.5em 0 0;
+
+    @include bp-max-width($medium) {
+      width: 100%;
+    }
 
     @include bp-min-width($medium) {
       position: relative;
@@ -28,7 +31,11 @@
     max-width: 220px;
 
     @include bp-min-width($medium) {
-      max-width: none;
+      max-width: 240px;
+    }
+    
+    @include bp-min-width(1200px) {
+      max-width: 100%;
     }
   }
 }

@@ -23,7 +23,7 @@ a {
     color: #fff;
   }
   
-  @include bp-min-width($medium) {
+  @include bp-min-width($large) {
     display: inline-block;
   }
     
@@ -55,7 +55,7 @@ a {
 .link-cta {
   font: $reg 21px/1em $slab;
 
-  @include bp-min-width($medium) {
+  @include bp-min-width($large) {
     font-size: 30px;
   }
 }

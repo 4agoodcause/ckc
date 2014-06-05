@@ -22,7 +22,7 @@
           </div>
         </div>
 
-        <aside class="sidebar-right">
+        <aside class="sidebar-start-fundraiser">
           <p>Fundraisers are a great way to get groups involved in working toward the greater good. Our fundraising software allows you and your group to:</p>
           <ul>
             <li>Create a personalized fundraising and donation page</li>
@@ -92,7 +92,10 @@
         </div>
 
         <div class="col-1-3">
-          <a href="" class="btn-start-fundraiser">Start a Fundraiser</a>
+          <a href="" class="btn-start-fundraiser">
+            <span class="btn-label">Start a Fundraiser</span>
+            <span class="icon-arrow"></span>
+          </a>
         </div>
 
       </div>

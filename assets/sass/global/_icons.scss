@@ -1,19 +1,30 @@
 
-/*
 [class*="icon-"] {
   display: inline-block;
-  background: $sprite no-repeat 0 0;
-}
-  
-.icon-twitter {
-  width: 26px;
-  height: 21px;
-  background-position: 0 -350px;
+  background: $sprite-png no-repeat;
+  background: $sprite no-repeat;
 }
 
-.icon-facebook {
-  width: 13px;
-  height: 22px;
-  background-position: 0 -374px;
+[class*="icon-social-"] {
+  width: 49px;
+  height: 49px;
+  background-position: 0 -67px;
 }
-*/
+
+.icon-social-facebook {
+  background-position: -60px -67px;
+}
+
+.icon-social-youtube {
+  background-position: -118px -67px;
+}
+
+.icon-social-flickr {
+  background-position: -177px -67px;
+}
+
+.icon-arrow {
+  width: 29px;
+  height: 28px;
+  background-position: 0 -38px;
+}

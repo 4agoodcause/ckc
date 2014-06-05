@@ -194,35 +194,41 @@ em {
   list-style: decimal;
 }
 
-/* $sprite: image-url("sprite.svg"); */
 .image-border {
   border: 8px solid #fff;
   box-shadow: 8px 8px 0 rgba(40, 54, 88, 0.1);
 }
 
-/*
 [class*="icon-"] {
   display: inline-block;
-  background: $sprite no-repeat 0 0;
-}
-  
-.icon-twitter {
-  width: 26px;
-  height: 21px;
-  background-position: 0 -350px;
+  background: url('/assets/images/sprite.png?1401917222') no-repeat;
+  background: url('/assets/images/sprite.svg?1401917181') no-repeat;
 }
 
-.icon-facebook {
-  width: 13px;
-  height: 22px;
-  background-position: 0 -374px;
+[class*="icon-social-"] {
+  width: 49px;
+  height: 49px;
+  background-position: 0 -67px;
 }
-*/
-/*
-@mixin wave-border-top() {
-    background: image-url("wave-top.png") repeat-x left top;
+
+.icon-social-facebook {
+  background-position: -60px -67px;
 }
-*/
+
+.icon-social-youtube {
+  background-position: -118px -67px;
+}
+
+.icon-social-flickr {
+  background-position: -177px -67px;
+}
+
+.icon-arrow {
+  width: 29px;
+  height: 28px;
+  background-position: 0 -38px;
+}
+
 /* 36px*/
 .grid {
   *zoom: 1;
@@ -286,7 +292,7 @@ em {
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .col-1-3 {
     width: 33.33%;
   }
@@ -379,7 +385,7 @@ a:hover {
   background: #283658;
   color: #fff;
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .btn {
     display: inline-block;
   }
@@ -406,7 +412,7 @@ a:hover {
 .link-cta {
   font: 400 21px/1em "chunk", Georgia, serif;
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .link-cta {
     font-size: 30px;
   }
@@ -468,7 +474,7 @@ select {
   border-radius: 5px;
   font: 400 1em/1em "proxima-nova", Helvetica, arial, sans-serif;
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   input[type="text"],
   input[type="email"],
   input[type="password"],
@@ -489,7 +495,7 @@ textarea {
   height: 96px;
   resize: none;
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   textarea {
     height: 144px;
     max-width: 540px;
@@ -500,7 +506,7 @@ textarea {
 .form-select {
   position: relative;
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .form-select {
     display: inline-block;
     width: 100%;
@@ -594,7 +600,7 @@ button {
   font: 400 1em/1.5em "proxima-nova", Helvetica, arial, sans-serif;
   cursor: pointer;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   input[type="submit"],
   button {
     width: 100%;
@@ -698,7 +704,7 @@ button.btn {
 .info-grid .wrapper {
   padding-bottom: 24px;
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .info-grid .wrapper {
     padding: 0;
   }
@@ -707,7 +713,7 @@ button.btn {
   border-bottom: 2px dashed #b2beca;
   padding-bottom: 24px;
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .info-grid [class*="col-"] {
     border-right: 2px dashed #b2beca;
     min-height: 340px;
@@ -962,7 +968,7 @@ button.btn {
 .content-start-fundraiser:after {
   clear: both;
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .content-start-fundraiser {
     padding-right: 440px;
   }
@@ -970,7 +976,7 @@ button.btn {
 .content-start-fundraiser .title-sub-section {
   margin-bottom: 24px;
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .content-start-fundraiser .title-sub-section {
     margin-bottom: 48px;
   }
@@ -995,34 +1001,50 @@ button.btn {
   padding-left: 3%;
 }
 
-.start-fundraiser .sidebar-right {
+.sidebar-start-fundraiser {
   padding: 24px;
   background: #1c263d;
   box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.1);
 }
-@media (min-width: 700px) {
-  .start-fundraiser .sidebar-right {
+@media (min-width: 900px) {
+  .sidebar-start-fundraiser {
     position: absolute;
     top: 0;
     right: 0;
     width: 400px;
-    padding: 48px 36px 36px;
+    padding: 48px 28px 36px;
   }
 }
-.start-fundraiser .sidebar-right p {
+.sidebar-start-fundraiser p {
   margin-bottom: 36px;
   color: #51a6d2;
   font-size: 16px;
   font-weight: 600;
 }
-.start-fundraiser .sidebar-right li {
-  margin-bottom: 24px;
-  padding: 4px 0;
+
+.sidebar-start-fundraiser li {
+  position: relative;
+  margin-bottom: 36px;
+  padding: 5px 0 0 50px;
   color: #fff;
   font: 400 19px/22px "chunk", Georgia, serif;
 }
-.start-fundraiser .sidebar-right li:last-of-type {
+.sidebar-start-fundraiser li:last-of-type {
   margin-bottom: 0;
+}
+.sidebar-start-fundraiser li:after {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  content: "";
+  display: block;
+  left: 0;
+  width: 37px;
+  height: 37px;
+  background: url('/assets/images/sprite.png?1401917222') no-repeat;
+  background: url('/assets/images/sprite.svg?1401917181') no-repeat;
 }
 
 .event-ideas {
@@ -1032,13 +1054,18 @@ button.btn {
 .grid-event-ideas [class*="col-"]:nth-child(3n+1) {
   clear: left;
 }
+@media (min-width: 900px) and (max-width: 1200px) {
+  .grid-event-ideas [class*="col-"]:last-child {
+    width: 66.66%;
+  }
+}
 .grid-event-ideas .wrap {
   padding: 12px 20px;
   background: #fff;
   border-radius: 5px;
   box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .grid-event-ideas .wrap {
     min-height: 160px;
   }
@@ -1052,6 +1079,7 @@ button.btn {
 }
 
 .btn-start-fundraiser {
+  position: relative;
   display: block;
   padding: 12px 20px;
   background: #51a6d2;
@@ -1061,9 +1089,15 @@ button.btn {
   font: 400 27px/1em "chunk", Georgia, serif;
   text-align: center;
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) and (max-width: 1200px) {
+  .btn-start-fundraiser {
+    font-size: 27px;
+  }
+}
+@media (min-width: 900px) {
   .btn-start-fundraiser {
     min-height: 160px;
+    border-right: 56px solid #283658;
     font-size: 50px;
     text-align: left;
   }
@@ -1072,8 +1106,32 @@ button.btn {
   color: #fff;
   background: #283658;
 }
+@media (min-width: 900px) {
+  .btn-start-fundraiser .btn-label {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 20px;
+  }
+}
+.btn-start-fundraiser .icon-arrow {
+  margin-left: 6px;
+  vertical-align: -7px;
+}
+@media (min-width: 900px) {
+  .btn-start-fundraiser .icon-arrow {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: -43px;
+  }
+}
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .donate-info-grid.info-grid [class*="col-"] {
     padding: 48px 3%;
   }
@@ -1084,7 +1142,7 @@ button.btn {
 .donate-info-grid p:last-child {
   margin-bottom: 0;
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .donate-info-grid p {
     margin-bottom: 24px;
   }
@@ -1106,7 +1164,7 @@ button.btn {
 .form-join-battle .form-item input {
   border: none;
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .form-join-battle .btn {
     float: right;
   }
@@ -1118,7 +1176,7 @@ button.btn {
   font-size: 14px;
   text-decoration: underline;
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .form-join-battle .terms {
     float: left;
   }
@@ -1243,8 +1301,12 @@ button.btn {
   background: #fff;
 }
 .header .wrapper {
-  width: 100%;
   padding: 0.5em 0 0;
+}
+@media (max-width: 700px) {
+  .header .wrapper {
+    width: 100%;
+  }
 }
 @media (min-width: 700px) {
   .header .wrapper {
@@ -1270,7 +1332,12 @@ button.btn {
 }
 @media (min-width: 700px) {
   .logo img {
-    max-width: none;
+    max-width: 240px;
+  }
+}
+@media (min-width: 1200px) {
+  .logo img {
+    max-width: 100%;
   }
 }
 
@@ -1387,11 +1454,12 @@ button.btn {
   clear: both;
   width: 100%;
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .main-nav ul {
     display: inline;
     float: right;
     width: auto;
+    margin-right: -16px;
     background: none;
   }
 }
@@ -1407,10 +1475,15 @@ button.btn {
 .main-nav li:first-of-type {
   border-top: 1px solid #51a6d2;
 }
+@media (min-width: 900px) {
+  .main-nav li:first-of-type {
+    border-top: none;
+  }
+}
 .main-nav li:last-of-type {
   border-bottom: none;
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .main-nav li {
     float: left;
     border-bottom: none;
@@ -1419,7 +1492,7 @@ button.btn {
 
 .main-nav li a {
   display: block;
-  padding: 0.5em 1em;
+  padding: 8px 16px;
   color: #fff;
   font-family: "chunk", Georgia, serif;
 }
@@ -1427,7 +1500,7 @@ button.btn {
   color: #fff;
   background: #283658;
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .main-nav li a {
     display: inline-block;
     padding: 1em;
@@ -1451,7 +1524,7 @@ button.btn {
 .btn-mobile-menu:hover {
   color: #51a6d2;
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .btn-mobile-menu {
     display: none;
   }
@@ -1525,7 +1598,7 @@ button.btn {
   padding-bottom: 0;
   border-bottom: none;
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .footer-social [class*="col-"] {
     margin-bottom: 0;
     padding-bottom: 0;
@@ -1558,9 +1631,17 @@ button.btn {
   color: #fff;
 }
 
-@media (min-width: 700px) {
-  .footer-social .follow-us li {
-    float: left;
-    margin-right: 1em;
-  }
+.footer-social .follow-us {
+  *zoom: 1;
+}
+.footer-social .follow-us:before, .footer-social .follow-us:after {
+  content: " ";
+  display: block;
+}
+.footer-social .follow-us:after {
+  clear: both;
+}
+.footer-social .follow-us li {
+  float: left;
+  margin-right: 12px;
 }

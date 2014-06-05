@@ -10,7 +10,7 @@
     border-bottom: none;
   }
 
-  @include bp-min-width($medium) {
+  @include bp-min-width($large) {
     margin-bottom: 0;
     padding-bottom: 0;
     border-bottom: none;
@@ -49,11 +49,10 @@
 
 
 .footer-social .follow-us {
+  @include cf;
   
   li {
-    @include bp-min-width($medium) {
-      float: left;
-      margin-right: 1em;
-    }
+    float: left;
+    margin-right: 12px;
   }
 }

@@ -2,10 +2,7 @@
 .main-nav {
   position: relative;
   background: $navy;
-  
-  @include bp-min-width($medium) {
-  }
-  
+    
   .wrapper {
     padding: 0;
   }
@@ -16,10 +13,11 @@
   clear: both;
   width: 100%;
   
-  @include bp-min-width($medium) {
+  @include bp-min-width($large) {
     display: inline;
     float: right;
     width: auto;
+    margin-right: -16px;
     background: none;
   }
 
@@ -35,13 +33,17 @@
   
   &:first-of-type {
     border-top: 1px solid $blue;
+
+    @include bp-min-width($large) {
+      border-top: none;
+    }
   }
   
   &:last-of-type {
     border-bottom: none;
   }
   
-  @include bp-min-width($medium) {
+  @include bp-min-width($large) {
     float: left;
     border-bottom: none;
   }
@@ -49,7 +51,7 @@
 
 .main-nav li a {
   display: block;
-  padding: 0.5em 1em;
+  padding: 8px 16px;
   color: #fff;
   font-family: $slab;
   
@@ -58,7 +60,7 @@
     background: $navy;
   }
   
-  @include bp-min-width($medium) {
+  @include bp-min-width($large) {
     display: inline-block;
     padding: 1em;
     font-size: 19px;
@@ -84,7 +86,7 @@
     color: $blue;
   }
     
-  @include bp-min-width($medium) {
+  @include bp-min-width($large) {
     display: none;
   }
 }

@@ -1,11 +1,13 @@
   <section class="footer-social">
     <div class="wrapper">
 
-      <div class="col-1-4 follow-us">
+      <div class="col-1-3 follow-us">
         <h3 class="title-block">Connect with Us</h3>
         <ul class="social-icons">
-          <li><a href="" class="icon-facebook-circle">Facebook</a></li>
-          <li><a href="" class="icon-twitter-circle">Twitter</a></li>
+          <li><a href="" class="icon-social-twitter"></a></li>
+          <li><a href="" class="icon-social-facebook"></a></li>
+          <li><a href="" class="icon-social-youtube"></a></li>
+          <li><a href="" class="icon-social-flickr"></a></li>
         </ul>
       </div>
       
@@ -21,7 +23,7 @@
         </article>
       </div>
       
-      <div class="col-5-12">
+      <div class="col-1-3">
         <h3 class="title-block">Join the Battle</h3>
         <p>Join our campaign to cure pediatric cancer. Learn 5 things you can do today to help.</p>
         <p><a href="" class="btn trans-border">Join the Battle</a></p>
