@@ -51,10 +51,12 @@
         
         <div class="col-1-2 our-impact">
           <h2 class="title"><span class="our">Our</span> Impact</h2>
-          <div class="icon-impact">Icon</div>
-          <div class="info">
-            <p>Since our creation, Curing Kids Cancer has given more than $4 million to fund research that will one day cure pediatric cancer.</p>
-            <p><a href="">Learn how we are changing lives</a></p>
+          <div class="content-wrap">
+            <div class="icon-impact"></div>
+            <div class="info">
+              <p>Since our creation, Curing Kids Cancer has given more than $4 million to fund research that will one day cure pediatric cancer.</p>
+              <p><a href="">Learn how we are changing lives</a></p>
+            </div>
           </div>
         </div>
         
