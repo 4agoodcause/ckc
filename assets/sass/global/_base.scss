@@ -49,7 +49,7 @@ body {
 .section-image {
   margin-bottom: $base*1.5;
 
-  @include bp-min-width($medium) {
+  @include bp-min-width($large) {
     margin-bottom: 0;
   }
 }

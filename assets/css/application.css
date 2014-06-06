@@ -440,7 +440,7 @@ body.page-home {
 .section-image {
   margin-bottom: 36px;
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .section-image {
     margin-bottom: 0;
   }
@@ -829,6 +829,9 @@ button.btn {
   float: left;
   width: 20%;
 }
+.post-list-small .post-thumb img {
+  width: 100%;
+}
 .post-list-small .post-info {
   float: left;
   width: 80%;
@@ -1014,8 +1017,10 @@ button.btn {
   margin-bottom: 0.5em;
   font-size: 32px;
 }
-.whats-new .post-title {
-  padding-right: 10%;
+@media (min-width: 900px) {
+  .whats-new .post-title {
+    padding-right: 10%;
+  }
 }
 
 /** OUR IMPACT ===========**/
@@ -1032,13 +1037,13 @@ button.btn {
 .our-impact .title {
   margin-bottom: 0.25em;
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .our-impact .title {
     font-size: 80px;
     line-height: 70px;
   }
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .our-impact .title .our {
     display: block;
   }
@@ -1064,7 +1069,7 @@ button.btn {
 /** OUR INSPIRATION ===========**/
 /** JOIN CRAIG ===========**/
 /** TESTIMONIALS ===========**/
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .testimonials {
     text-align: center;
   }

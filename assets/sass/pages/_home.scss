@@ -78,7 +78,6 @@
 }
 
 .donate-copy {
-
   @include bp-min-width($large) {
     margin-bottom: 0;
     padding-right: 300px;
@@ -88,7 +87,6 @@
 }
 
 .donate-btn {
-
   @include bp-min-width($large) {
     position: absolute;
     top: $base;
@@ -108,14 +106,15 @@
 /** WHAT'S NEW ===========**/
 
 .whats-new {
-  
   .title {
     margin-bottom: 0.5em;
     font-size: 32px;
   }
   
   .post-title {
-    padding-right: 10%;
+    @include bp-min-width($large) {
+      padding-right: 10%;
+    }
   }
 }
 
@@ -128,13 +127,13 @@
   .title {
     margin-bottom: 0.25em;
 
-    @include bp-min-width($medium) {
+    @include bp-min-width($large) {
       font-size: 80px;
       line-height: 70px;
     }
     
     .our {
-      @include bp-min-width($medium) {
+      @include bp-min-width($large) {
         display: block;
       }
     }
@@ -170,18 +169,15 @@
 }
 
 
-
 /** JOIN CRAIG ===========**/
 
 .join-craig {}
 
 
-
 /** TESTIMONIALS ===========**/
 
 .testimonials {
-
-  @include bp-min-width($medium) {
+  @include bp-min-width($large) {
     text-align: center;
   }
   
