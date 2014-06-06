@@ -1,6 +1,6 @@
 
 .hero {
-  background: $blue;
+  background: $blue $hero-news no-repeat center center;
   text-align: center;
   color: #fff;
     
@@ -31,4 +31,12 @@
     font-size: 18px;
     font-weight: $semi;
   }
+}
+
+.page-donate .hero {
+  background: $blue $hero-donate no-repeat center center;
+}
+
+.page-get-involved .hero {
+  background: $blue $hero-get-involved no-repeat center center;
 }

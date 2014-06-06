@@ -91,6 +91,10 @@ p {
   }
 }
 
+ul, ol {
+  @extend p;
+}
+
 strong {
   font-weight: $bold;
 }
@@ -100,6 +104,10 @@ em {
 }
 
 .label {
+  font-weight: $bold;
+}
+
+.body h4 {
   font-weight: $bold;
 }
 

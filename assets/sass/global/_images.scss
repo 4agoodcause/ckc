@@ -2,7 +2,30 @@
 $sprite: image-url("sprite.svg");
 $sprite-png: image-url("sprite.png");
 
+$hero-home: image-url("hero-home.jpg");
+$hero-donate: image-url("hero-donate.jpg");
+$hero-get-involved: image-url("hero-get-involved.jpg");
+$hero-news: image-url("hero-news.jpg");
+
 .image-border {
   border: 8px solid #fff;
   box-shadow: 8px 8px 0 rgba($navy, 0.1);
+}
+
+figure {
+  max-width: 740px;
+  margin: 0 auto $base;
+  padding: 12px;
+  background: rgba($grey, 0.2);
+  border-radius: 5px;
+
+  @include bp-min-width($medium) {
+    padding: 20px;
+  }
+    
+  figcaption {
+    margin-top: 1em;
+    font-size: 15px;
+    font-style: italic;
+  }
 }
