@@ -102,12 +102,23 @@
   }
   
   .older {
-    float: left;
-    margin-right: 4px;
+    @include bp-max-width($tiny) {
+      display: block;
+      text-align: center;
+      margin-bottom: $base;
+    }
+    @include bp-min-width($tiny) {
+      float: left;
+    }
   }
   
   .newer {
-    float: right;
-    margin-left: 4px;
+    @include bp-max-width($tiny) {
+      display: block;
+      text-align: center;
+    }
+    @include bp-min-width($tiny) {
+      float: right;
+    }
   }
 }

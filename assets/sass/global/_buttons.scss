@@ -65,4 +65,12 @@ a {
   &.read-more {
     font-size: 19px;
   }
+  
+  [class*="icon-"] {
+    vertical-align: -5px;
+
+    @include bp-min-width($large) {
+      vertical-align: -2px;
+    }
+  }
 }
