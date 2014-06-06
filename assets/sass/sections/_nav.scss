@@ -99,6 +99,10 @@
     &.active .icon-arrow-down {
       @include rotate(180deg)
     }
+
+    @include bp-min-width($large) {
+      display: none;
+    }
   }
 }
 

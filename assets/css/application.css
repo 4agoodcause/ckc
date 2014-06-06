@@ -1742,6 +1742,11 @@ button.btn {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
+@media (min-width: 900px) {
+  .main-nav .parent .open-menu {
+    display: none;
+  }
+}
 
 .main-nav .child-menu {
   display: none;
