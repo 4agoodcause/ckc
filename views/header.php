@@ -36,11 +36,11 @@
       <ul>
         <li><a href="">About Us</a></li>
         <li><a href="">Our Impact</a></li>
-        <li><a href="">Donate</a></li>
-        <li><a href="">Get Involved</a></li>
-        <li class="parent"><a href="">News & Events <span class="open-menu"><span class="icon-arrow-down"></span></span></a>
+        <li><a href="donate.php">Donate</a></li>
+        <li><a href="get-involved.php">Get Involved</a></li>
+        <li class="parent"><a href="news.php">News & Events <span class="open-menu"><span class="icon-arrow-down"></span></span></a>
           <ul class="child-menu">
-            <li><a href="" class="active">News</a></li>
+            <li><a href="news.php" class="active">News</a></li>
             <li><a href="">Press Releases</a></li>
             <li><a href="">Events</a></li>
             <li><a href="">Event Photos</a></li>

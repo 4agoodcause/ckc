@@ -78,7 +78,7 @@
           <h2 class="title-section">Our Inspiration</h2>
           <p>Five-year-old Killian Owen loved sports, especially baseball, basketball and swimming. He enjoyed playing (and competing!) with his brothers. On December 10, 1999, Killian was diagnosed with Acute Lymphocytic Leukemia. Despite the best efforts of those caring for Killian and his own determination the disease took his life on July 27, 2003. He was nine years old.</p>
           <p>We work in Killian's memory for children who need a cure. Join us in this fight for an end to childhood cancer.</p>
-          <p><a href="" class="link-cta">Read More of Killian's Story <span class="icon-arrows"></span></a></p>
+          <p><a href="" class="link-cta">Read More of Killian's Story <span class="icon-arrows-right"></span></a></p>
         </div>
       
       </div>
@@ -98,7 +98,7 @@
         <div class="col-3-4">    
           <h2 class="title-section">Join Craig Kimbrel</h2>
           <p>Craig Kimbrel, the All-Star closing pitcher for the Atlanta Braves, is Chairman of Players Curing Kids Cancer. Craig donates $100 for every save and $25 for every strikeout to Curing Kids Cancer. That has added up to more than $14,000 so far.</p>
-          <p><a href="" class="link-cta">Donate Now <span class="icon-arrows"></span></a></p>
+          <p><a href="" class="link-cta">Donate Now <span class="icon-arrows-right"></span></a></p>
         </div>
       
       </div>

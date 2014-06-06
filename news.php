@@ -15,13 +15,13 @@
         <div class="post-list">
         
           <article class="post">
-            <h2 class="post-title"><a href="">News Title Here Lorem Ipsum</a></h2>
+            <h2 class="post-title"><a href="post.php">News Title Here Lorem Ipsum</a></h2>
             <p class="post-date">June 15, 2013</p>
             <div class="content-wrap">
-              <div class="post-thumb"><a href=""><img src="/assets/images/thumb-news-lg-01.jpg"></a></div>
+              <div class="post-thumb"><a href="post.php"><img src="/assets/images/thumb-news-lg-01.jpg"></a></div>
               <div class="post-teaser">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-                <p><a href="" class="link-cta read-more">Read More</a></p>
+                <p><a href="post.php" class="link-cta read-more">Read More</a></p>
               </div>
             </div>
           </article>
