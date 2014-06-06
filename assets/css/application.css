@@ -303,7 +303,7 @@ figure figcaption {
 .grid:after {
   clear: both;
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .grid {
     margin: 0 -18px;
   }
@@ -317,38 +317,38 @@ figure figcaption {
 [class*='col-']:last-of-type {
   margin-bottom: 0;
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   [class*='col-'] {
     float: left;
     padding: 0 18px;
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .col-3-4 {
     width: 75%;
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .col-2-3 {
     width: 66.66%;
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .col-7-12 {
     width: 58.33%;
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .col-1-2 {
     width: 50%;
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .col-5-12 {
     width: 41.66%;
   }
@@ -360,13 +360,13 @@ figure figcaption {
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .col-1-4 {
     width: 25%;
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .col-1-6 {
     width: 16.66%;
   }

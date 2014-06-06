@@ -5,7 +5,7 @@ $pad: 18px;
   @include cf;
   margin: 0;
   
-  @include bp-min-width($medium) {
+  @include bp-min-width($large) {
     margin: 0 -18px;
   }
 }
@@ -19,38 +19,38 @@ $pad: 18px;
     margin-bottom: 0;
   }
   
-  @include bp-min-width($medium) {
+  @include bp-min-width($large) {
     float: left;
     padding: 0 $pad;
   }
 }
 
 .col-3-4 {
-  @include bp-min-width($medium) {
+  @include bp-min-width($large) {
     width: 75%;
   }
 }
 
 .col-2-3 {
-  @include bp-min-width($medium) {
+  @include bp-min-width($large) {
     width: 66.66%;
   }
 }
 
 .col-7-12 {
-  @include bp-min-width($medium) {
+  @include bp-min-width($large) {
     width: 58.33%;
   }
 }
 
 .col-1-2 {
-  @include bp-min-width($medium) {
+  @include bp-min-width($large) {
     width: 50%;
   }
 }
 
 .col-5-12 {
-  @include bp-min-width($medium) {
+  @include bp-min-width($large) {
     width: 41.66%;
   }
 }
@@ -62,13 +62,13 @@ $pad: 18px;
 }
 
 .col-1-4 {
-  @include bp-min-width($medium) {
+  @include bp-min-width($large) {
     width: 25%;
   }
 }
 
 .col-1-6 {
-  @include bp-min-width($medium) {
+  @include bp-min-width($large) {
     width: 16.66%;
   }
 }
