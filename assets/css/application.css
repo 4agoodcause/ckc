@@ -393,7 +393,7 @@ body.page-home {
 .wrapper:after {
   clear: both;
 }
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .wrapper {
     width: 94%;
     padding: 48px 0;
@@ -402,12 +402,22 @@ body.page-home {
 
 .main .wrapper {
   position: relative;
+  width: 100%;
   padding: 0;
-  min-height: 400px;
+}
+@media (min-width: 900px) {
+  .main .wrapper {
+    min-height: 400px;
+  }
 }
 
 .content {
-  padding: 24px 0;
+  padding: 24px 4%;
+}
+@media (min-width: 700px) {
+  .content {
+    padding: 24px 3%;
+  }
 }
 @media (min-width: 900px) {
   .content {
@@ -1871,8 +1881,12 @@ button.btn {
 
 .sidebar-left {
   background: #eef9fb;
-  margin: 0 -4%;
-  padding: 0 3%;
+  padding: 12px 4%;
+}
+@media (min-width: 700px) {
+  .sidebar-left {
+    padding: 24px 3%;
+  }
 }
 @media (min-width: 900px) {
   .sidebar-left {
@@ -1895,13 +1909,24 @@ button.btn {
     padding: 12px 20px;
   }
 }
-.sidebar-left .block:last-of-type {
+.sidebar-left .block:first-child {
+  padding-top: 0;
+}
+.sidebar-left .block:last-child {
   border-bottom: none;
 }
 .sidebar-left .title {
   color: #283658;
 }
 
+.side-menu {
+  display: none;
+}
+@media (min-width: 900px) {
+  .side-menu {
+    display: block;
+  }
+}
 .side-menu ul {
   margin-left: -0.5em;
 }

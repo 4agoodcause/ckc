@@ -13,7 +13,7 @@ body {
   padding: $base*1.5 0;
   margin: 0 auto;
   
-  @include bp-min-width($small) {
+  @include bp-min-width($medium) {
     width: 94%;
     padding: $base*2 0;
   }
@@ -21,12 +21,20 @@ body {
 
 .main .wrapper {
   position: relative;
+  width: 100%;
   padding: 0;
-  min-height: 400px;
+
+  @include bp-min-width($large) {
+    min-height: 400px;
+  }
 }
 
 .content {
-  padding: $base 0;
+  padding: $base 4%;
+
+  @include bp-min-width($medium) {
+    padding: $base 3%;
+  }
   
   @include bp-min-width($large) {
     padding: $base*2 0 $base*2 3%;

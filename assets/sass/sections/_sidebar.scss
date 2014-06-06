@@ -1,8 +1,11 @@
 
 .sidebar-left {
   background: $lt-blue;
-  margin: 0 -4%;
-  padding: 0 3%;
+  padding: 12px 4%;
+
+  @include bp-min-width($medium) {
+    padding: $base 3%;
+  }
 
   @include bp-min-width($large) {
     position: absolute;
@@ -24,7 +27,11 @@
       padding: 12px 20px;
     }
     
-    &:last-of-type {
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
       border-bottom: none;
     }
 
@@ -36,6 +43,12 @@
 }
 
 .side-menu {
+  display: none;
+
+  @include bp-min-width($large) {
+    display: block;
+  }
+  
   ul {
     margin-left: -0.5em;
   }
