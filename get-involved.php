@@ -10,11 +10,11 @@
     </div>
   </section>
 
-  <section class="start-fundraiser  navy-section">
+  <section class="start-fundraiser navy-section">
     <div class="wrapper">
             
         <div class="content-start-fundraiser">
-          <h2 class="title-section">Get a Gift For Your Coach!</h2>
+          <h2 class="title-section">Start a Fundraiser!</h2>
           <h3 class="title-sub-section">Raise funds. Impact change. Find a cure.</h3>
           <div class="content-wrap">
             <div class="image"><img src="/assets/images/pic-get-involved-01.jpg" class="image-border"></div>
