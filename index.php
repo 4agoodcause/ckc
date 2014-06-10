@@ -144,7 +144,39 @@
       <div class="grid">
       
         <div class="col-1-6">
-        
+          <div class="logo-partner">
+            <img src="/assets/images/partner-att.png">
+          </div>
+        </div>
+
+        <div class="col-1-6">
+          <div class="logo-partner">
+            <img src="/assets/images/partner-att.png">
+          </div>
+        </div>
+
+        <div class="col-1-6">
+          <div class="logo-partner">
+            <img src="/assets/images/partner-att.png">
+          </div>
+        </div>
+
+        <div class="col-1-6">
+          <div class="logo-partner">
+            <img src="/assets/images/partner-att.png">
+          </div>
+        </div>
+
+        <div class="col-1-6">
+          <div class="logo-partner">
+            <img src="/assets/images/partner-att.png">
+          </div>
+        </div>
+
+        <div class="col-1-6">
+          <div class="logo-partner">
+            <img src="/assets/images/partner-att.png">
+          </div>
         </div>
 
       </div>

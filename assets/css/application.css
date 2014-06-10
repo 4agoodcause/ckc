@@ -366,6 +366,16 @@ figure figcaption {
   }
 }
 
+.col-1-6 {
+  float: left;
+  width: 50%;
+  padding: 0 18px;
+}
+@media (min-width: 600px) {
+  .col-1-6 {
+    width: 33.33%;
+  }
+}
 @media (min-width: 900px) {
   .col-1-6 {
     width: 16.66%;
@@ -1108,6 +1118,25 @@ button.btn {
 }
 .testimonials .quote-position {
   font-size: 15px;
+}
+
+/** OUR PARTNERS ===========**/
+.our-partners .logo-partner {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 100% 0 0;
+  background: #fff;
+  border-radius: 50%;
+}
+.our-partners .logo-partner img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-width: 80%;
 }
 
 .visit-store {

@@ -198,3 +198,22 @@
 }
 
 
+/** OUR PARTNERS ===========**/
+
+.our-partners .logo-partner {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 100% 0 0;
+  background: #fff;
+  border-radius: 50%;
+  
+  img {
+    @include absolute-center;
+    max-width: 80%;
+  }
+  
+  &:after {}
+}
+
+
