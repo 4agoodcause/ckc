@@ -1201,6 +1201,18 @@ button.btn {
   }
 }
 
+.page-get-involved .main-nav li:nth-child(4) a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 14px;
+  z-index: 10;
+  height: 1px;
+  border-bottom: 2px dashed #51a6d2;
+}
+
 .start-fundraiser {
   background: #283658;
 }
@@ -1773,6 +1785,7 @@ button.btn {
 }
 
 .main-nav li {
+  position: relative;
   float: none;
   margin: 0;
   border-bottom: 1px solid #51a6d2;
@@ -1811,9 +1824,16 @@ button.btn {
     padding: 1em;
     font-size: 19px;
   }
-  .main-nav li a:hover, .main-nav li a.active {
-    color: #fff;
-    background: #51a6d2;
+  .main-nav li a:hover:after, .main-nav li a.active:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    bottom: 14px;
+    z-index: 10;
+    height: 1px;
+    border-bottom: 2px dashed #51a6d2;
   }
 }
 
