@@ -1714,6 +1714,9 @@ button.btn {
     float: right;
   }
 }
+.footer-right img {
+  width: 100px;
+}
 
 .footer-top [class*="col-"] {
   margin-bottom: 24px;

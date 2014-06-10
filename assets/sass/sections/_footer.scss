@@ -73,4 +73,8 @@
   @include bp-min-width($medium) {
     float: right;
   }
+  
+  img {
+    width: 100px;
+  }
 }
