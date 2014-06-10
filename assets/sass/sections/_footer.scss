@@ -9,6 +9,15 @@
   }
 }
 
+.footer-left {
+  @include bp-max-width($medium) {
+    margin-bottom: $base;
+  }
+  @include bp-min-width($medium) {
+    float: left;
+  }
+}
+
 .footer-nav {
   text-align: center;
   
@@ -55,5 +64,13 @@
   p {
     font-size: 15px;
     text-align: center;
+  }
+}
+
+.footer-right {
+  text-align: center;
+
+  @include bp-min-width($medium) {
+    float: right;
   }
 }

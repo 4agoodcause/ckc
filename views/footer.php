@@ -39,21 +39,26 @@
   <footer class="footer">
     <div class="wrapper">
     
-      <div class="guide-star">
+      <div class="footer-left">
+        <div class="guide-star">
+        </div>
       
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms</a></li>
+          </ul>
+        </nav>
+        
+        <div class="footer-copyright">
+          <p>&copy; 2014 Curing Kids Cancer. All Rights Reserved.</p>
+        </div>
       </div>
-    
-      <nav class="footer-nav">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">Privacy Policy</a></li>
-          <li><a href="">Terms</a></li>
-        </ul>
-      </nav>
       
-      <div class="footer-copyright">
-        <p>&copy; 2014 Curing Kids Cancer. All Rights Reserved.</p>
+      <div class="footer-right">
+        <img src="/assets/images/logo_4agc.png">
       </div>
     
     </div>

@@ -1647,6 +1647,17 @@ button.btn {
   color: #b2beca;
 }
 
+@media (max-width: 700px) {
+  .footer-left {
+    margin-bottom: 24px;
+  }
+}
+@media (min-width: 700px) {
+  .footer-left {
+    float: left;
+  }
+}
+
 .footer-nav {
   text-align: center;
 }
@@ -1693,6 +1704,15 @@ button.btn {
 .footer-copyright p, .footer-copyright ul, .footer-copyright ol {
   font-size: 15px;
   text-align: center;
+}
+
+.footer-right {
+  text-align: center;
+}
+@media (min-width: 700px) {
+  .footer-right {
+    float: right;
+  }
 }
 
 .footer-top [class*="col-"] {
