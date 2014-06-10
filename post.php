@@ -50,12 +50,15 @@
         
         <div class="block block-share">
           <h3 class="title-block">Share This Page</h3>
-          <ul class="social-icons">
-            <li><a href="" class="icon-social-sm-twitter"></a></li>
-            <li><a href="" class="icon-social-sm-facebook"></a></li>
-            <li><a href="" class="icon-social-sm-youtube"></a></li>
-            <li><a href="" class="icon-social-sm-flickr"></a></li>
-          </ul>
+          <!-- AddThis Button BEGIN -->
+          <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+          <a class="addthis_button_facebook"></a>
+          <a class="addthis_button_twitter"></a>
+          <a class="addthis_button_google_plusone_share"></a>
+          <a class="addthis_button_pinterest_share"></a>
+          </div>
+          <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-52f411df2112e6ed"></script>
+          <!-- AddThis Button END -->
         </div>
 
         <div class="block block-media">
