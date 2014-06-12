@@ -1835,7 +1835,8 @@ button.btn {
   display: block;
   padding: 8px 16px;
   color: #fff;
-  font-family: "chunk", Georgia, serif;
+  font-weight: 700;
+  /*   font-family: $slab; */
 }
 .main-nav li a:hover, .main-nav li a.active {
   color: #fff;

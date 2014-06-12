@@ -58,7 +58,8 @@
   display: block;
   padding: 8px 16px;
   color: #fff;
-  font-family: $slab;
+  font-weight: $bold;
+/*   font-family: $slab; */
   
   &:hover, &.active {
     color: #fff;
