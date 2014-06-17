@@ -31,14 +31,14 @@
 
   @include bp-min-width($medium) {
     float: left;
-    margin-right: 2em;
+    margin-right: 32px;
     font-size: 14px;
   }
 }
 
 .footer-nav a {
   display: block;
-  padding: 0.25em 0;
+  padding: 4px 0;
   font-size: 14px;
   font-weight: $semi;
   text-transform: uppercase;

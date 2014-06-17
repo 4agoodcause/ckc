@@ -59,7 +59,6 @@
   padding: 8px 16px;
   color: #fff;
   font-weight: $bold;
-/*   font-family: $slab; */
   
   &:hover, &.active {
     color: #fff;
@@ -68,7 +67,7 @@
   
   @include bp-min-width($large) {
     display: inline-block;
-    padding: 1em;
+    padding: 18px 20px;
     font-size: 19px;
 
     &:hover:after, &.active:after {
@@ -128,8 +127,8 @@
   }
   
   li a {
-    line-height: 1em;
     padding-left: 24px;
+    line-height: 1em;
   }
 }
 
@@ -138,7 +137,7 @@
 .btn-mobile-menu {
   display: block;
   position: relative;
-  padding: 0.75em;
+  padding: 12px;
   color: #fff;
   text-transform: uppercase;
   text-align: center;
@@ -204,5 +203,3 @@
 .btn-mobile-menu.active .bar:nth-child(3) {
   display: none;
 }
-
-

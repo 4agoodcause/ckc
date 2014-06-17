@@ -1,7 +1,5 @@
-/* Vendor Dependencies */
 @import "compass";
 
-/* Global */
 @import "global/reset";
 @import "global/media-queries";
 @import "global/colors";
@@ -14,19 +12,16 @@
 @import "global/buttons";
 @import "global/forms";
 
-/* Modules */
 @import "modules/hero";
 @import "modules/post-list";
 @import "modules/info-grid";
 @import "modules/navy-section";
 
-/* Pages */
 @import "pages/home";
 @import "pages/donate";
 @import "pages/get-involved";
 @import "pages/style-guide";
 
-/* Sections */
 @import "sections/header";
 @import "sections/footer";
 @import "sections/footer-top";

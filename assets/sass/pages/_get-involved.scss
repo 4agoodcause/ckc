@@ -1,16 +1,4 @@
 
-.page-get-involved .main-nav li:nth-child(4) a:after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 16px;
-    right: 16px;
-    bottom: 14px;
-    z-index: 10;
-    height: 1px;
-    border-bottom: 2px dashed $blue;
-}
-
 .start-fundraiser {
   background: $navy;
   

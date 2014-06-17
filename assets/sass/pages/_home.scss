@@ -1,4 +1,8 @@
 
+.page-home {
+  background: $lt-blue;
+}
+
 .page-home .hero {
   background: $blue $hero-home no-repeat center center;
   text-align: left;
@@ -60,7 +64,7 @@
 
     @include bp-min-width(1120px) {
       position: absolute;
-      bottom: 1em;
+      bottom: 14px;
       right: 0;
       width: 41.66%;
     }
@@ -212,8 +216,4 @@
     @include absolute-center;
     max-width: 80%;
   }
-  
-  &:after {}
 }
-
-
