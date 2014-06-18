@@ -720,7 +720,6 @@ button.btn {
 }
 
 .hero {
-  background: #51a6d2 url('/assets/images/hero-news.jpg?1402067377') no-repeat center center;
   text-align: center;
   color: #fff;
 }
@@ -752,11 +751,28 @@ button.btn {
 }
 
 .page-donate .hero {
-  background: #51a6d2 url('/assets/images/hero-donate.jpg?1402067370') no-repeat center center;
+  background: #51a6d2 url('/assets/images/hero-02.jpg?1403106037') no-repeat center center;
 }
 
 .page-get-involved .hero {
-  background: #51a6d2 url('/assets/images/hero-get-involved.jpg?1402067383') no-repeat center center;
+  background: #51a6d2 url('/assets/images/hero-01.jpg?1403106025') no-repeat center center;
+}
+
+.page-news .hero,
+.page-post .hero {
+  background: #51a6d2 url('/assets/images/hero-03.jpg?1403106045') no-repeat center center;
+}
+
+.page-about .hero {
+  background: #51a6d2 url('/assets/images/hero-04.jpg?1403106052') no-repeat center center;
+}
+
+.page-our-impact .hero {
+  background: #51a6d2 url('/assets/images/hero-05.jpg?1403106059') no-repeat center center;
+}
+
+.page-contact .hero {
+  background: #51a6d2 url('/assets/images/hero-06.jpg?1403106065') no-repeat center center;
 }
 
 .post-date {

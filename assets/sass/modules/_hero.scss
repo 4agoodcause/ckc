@@ -1,6 +1,5 @@
 
 .hero {
-  background: $blue $hero-news no-repeat center center;
   text-align: center;
   color: #fff;
     
@@ -40,3 +39,21 @@
 .page-get-involved .hero {
   background: $blue $hero-get-involved no-repeat center center;
 }
+
+.page-news .hero,
+.page-post .hero {
+  background: $blue $hero-news no-repeat center center;
+}
+
+.page-about .hero {
+  background: $blue $hero-about no-repeat center center;
+}
+
+.page-our-impact .hero {
+  background: $blue $hero-our-impact no-repeat center center;
+}
+
+.page-contact .hero {
+  background: $blue $hero-contact no-repeat center center;
+}
+
