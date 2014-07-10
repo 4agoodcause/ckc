@@ -1588,6 +1588,18 @@ button.btn {
 @media (min-width: 700px) {
   .footer-left {
     float: left;
+    max-width: 540px;
+  }
+}
+
+.guide-star {
+  text-align: center;
+  margin-bottom: 12px;
+}
+@media (min-width: 700px) {
+  .guide-star {
+    float: left;
+    margin: 0 24px 0 0;
   }
 }
 
@@ -1596,7 +1608,7 @@ button.btn {
 }
 @media (min-width: 700px) {
   .footer-nav {
-    float: left;
+    display: inline-block;
   }
 }
 
@@ -1630,8 +1642,7 @@ button.btn {
 
 @media (min-width: 700px) {
   .footer-copyright {
-    float: left;
-    clear: left;
+    display: inline-block;
   }
 }
 .footer-copyright p, .footer-copyright ul, .footer-copyright ol {

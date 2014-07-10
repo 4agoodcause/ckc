@@ -41,6 +41,7 @@
     
       <div class="footer-left">
         <div class="guide-star">
+          <img src="/assets/images/logo-guide-star.png" alt="Guide Star">
         </div>
       
         <nav class="footer-nav">

@@ -19,6 +19,17 @@
   }
   @include bp-min-width($medium) {
     float: left;
+    max-width: 540px;
+  }
+}
+
+.guide-star {
+  text-align: center;
+  margin-bottom: 12px;
+    
+  @include bp-min-width($medium) {
+    float: left;
+    margin: 0 $base 0 0;
   }
 }
 
@@ -26,7 +37,7 @@
   text-align: center;
   
   @include bp-min-width($medium) {
-    float: left;
+    display: inline-block;
   }
 }
 
@@ -61,8 +72,7 @@
 .footer-copyright {
 
   @include bp-min-width($medium) {
-    float: left;
-    clear: left;
+    display: inline-block;
   }
   
   p {
