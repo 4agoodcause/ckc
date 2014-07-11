@@ -34,7 +34,15 @@
     
       <a href="" class="btn-mobile-menu"><span class="icon-menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span> Menu</a>
       <ul>
-        <li><a href="">About Us</a></li>
+        <li class="parent"><a href="">About Us <span class="open-menu"><span class="icon-arrow-down"></span></span></a>
+          <ul class="child-menu">
+            <li><a href="news.php" class="active">News</a></li>
+            <li><a href="">Press Releases</a></li>
+            <li><a href="">Events</a></li>
+            <li><a href="">Event Photos</a></li>
+            <li><a href="">Newsletter Archive</a></li>
+          </ul>        
+        </li>
         <li><a href="">Our Impact</a></li>
         <li><a href="donate.php">Donate</a></li>
         <li><a href="get-involved.php">Get Involved</a></li>

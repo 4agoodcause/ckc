@@ -15,7 +15,7 @@ $(function(){
   });
   
   $('.open-menu').click(function(){
-    $('.child-menu').toggleClass('show');
+    $(this).closest('.parent').find('.child-menu').toggleClass('show');
     $(this).toggleClass('active');
     return false;
   });
